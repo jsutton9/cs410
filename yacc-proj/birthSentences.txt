@@ -1,0 +1,60 @@
+(BORN, Born) (MONTH, September) (NUMBER, 23) (YEAR, 1914) (CAPITAL, Petersburg) (DAUGHTEROF, daughter of) (CAPITAL, Arthur) (INITIAL, E.) (AND, and) (CAPITAL, Stella) (LPAREN, () (CAPITAL, Cox) (RPAREN, )) (CAPITAL, Borror) (PERIOD, .)
+
+birth (PERIOD, .)
+
+
+(BORN, born) (MONTH, March) (NUMBER, 28) (YEAR, 1940) (CAPITAL, Clarksburg) (CAPITAL, WV) (DAUGHTEROF, daughter of) (CAPITAL, Clee) (AND, and) (CAPITAL, Grace) (CAPITAL, O’Bryon) (CAPITAL, Reed) (PERIOD, .)
+
+birth (PERIOD, .)
+
+
+(BORN, Born) (MONTH, May) (NUMBER, 29) (YEAR, 1931) (CAPITAL, Petersburg) (SONOF, son of) (CAPITAL, Eston) (INITIAL, T.) (SUFFIX, Sr.) (AND, and) (CAPITAL, Dora) (LPAREN, () (CAPITAL, Cox) (RPAREN, )) (CAPITAL, Kimble) (PERIOD, .)
+
+birth (PERIOD, .)
+
+
+(BORN, Born) (MONTH, June) (NUMBER, 4) (YEAR, 1930) (CAPITAL, Petersburg) (SONOF, son of) (CAPITAL, Thomas) (CAPITAL, William) (AND, and) (CAPITAL, Elizabeth) (CAPITAL, Sena) (LPAREN, () (CAPITAL, Mongold) (RPAREN, )) (CAPITAL, Cox) (PERIOD, .)
+
+birth (PERIOD, .)
+
+
+(BORN, Born) (MONTH, June) (NUMBER, 5) (YEAR, 1922) (CAPITAL, Petersburg) (SONOF, son of) (CAPITAL, Orva) (INITIAL, J.) (CAPITAL, Mauzy) (AND, and) (CAPITAL, Lena) (CAPITAL, Leota) (LPAREN, () (CAPITAL, Feaster) (RPAREN, )) (CAPITAL, Mauzy) (PERIOD, .)
+
+birth (PERIOD, .)
+
+
+(BORN, Born) (MONTH, February) (NUMBER, 10) (YEAR, 1938) (CAPITAL, Petersburg) (SONOF, son of) (CAPITAL, Pearl) (CAPITAL, Riley) (CAPITAL, Oates) (AND, and) (INITIAL, O.) (INITIAL, R.) (CAPITAL, Oates) (SUFFIX, Sr.) (INITIAL, O.) (INITIAL, R.) (CAPITAL, Oates) (SUFFIX, Jr.) (NEWLINE, 
+)
+
+birth (NEWLINE, 
+)
+
+
+(BORN, Born) (MONTH, January) (NUMBER, 14) (YEAR, 1929) (CAPITAL, Benbush) (DAUGHTEROF, daughter of) (CAPITAL, Howard) (INITIAL, E.) (AND, and) (CAPITAL, Nine) (INITIAL, F.) (LPAREN, () (CAPITAL, Pennington) (RPAREN, )) (CAPITAL, Roy) (PERIOD, .)
+
+birth (PERIOD, .)
+
+
+(BORN, Born) (MONTH, March) (NUMBER, 9) (YEAR, 1928) (CAPITAL, Landes) (SONOF, son of) (CAPITAL, James) (CAPITAL, Borror) (AND, and) (CAPITAL, Ada) (CAPITAL, Belle) (LPAREN, () (CAPITAL, Judy) (RPAREN, )) (CAPITAL, Borror) (PERIOD, .)
+
+birth (PERIOD, .)
+
+
+(CAPITAL, He) (BORN, born) (MONTH, April) (NUMBER, 11) (YEAR, 1917) (CAPITAL, Ft.) (CAPITAL, Seybert) (CAPITAL, Glenn) (AND, and) (CAPITAL, Myra) (CAPITAL, Eye) (CAPITAL, Rexrode) (PERIOD, .)
+
+(CAPITAL, He) birth (PERIOD, .)
+
+
+(BORN, Born) (MONTH, October) (NUMBER, 8) (YEAR, 1919) (CAPITAL, Franklin) (DAUGHTEROF, daughter of) (CAPITAL, Jacob) (CAPITAL, Propst) (AND, and) (CAPITAL, Mahulda) (LPAREN, () (CAPITAL, Propst) (RPAREN, )) (CAPITAL, Propst) (PERIOD, .)
+
+birth (PERIOD, .)
+
+
+(BORN, Born) (MONTH, December) (NUMBER, 5) (YEAR, 1932) (CAPITAL, Pennsylvania) (SONOF, son of) (CAPITAL, Townsend) (AND, and) (CAPITAL, Alice) (LPAREN, () (CAPITAL, Wirz) (RPAREN, )) (CAPITAL, Cox) (PERIOD, .)
+
+birth (PERIOD, .)
+
+
+(CAPITAL, He) (BORN, born) (MONTH, February) (NUMBER, 13) (YEAR, 1928) (CAPITAL, Landes) (SONOF, son of) (CAPITAL, Bert) (INITIAL, F.) (AND, and) (CAPITAL, Minnie) (INITIAL, J.) (CAPITAL, Hiser) (PERIOD, .)
+
+(CAPITAL, He) birth (PERIOD, .)

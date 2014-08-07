@@ -1,0 +1,14 @@
+(CAPITAL, Aged) (CAPITAL, Citizen) (CAPITAL, Dies) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, John) (INITIAL, R.) (CAPITAL, Cox) (NUMBER, 77) (DIED, died) (CAPITAL, Brushy) (CAPITAL, Run) (WEEKDAY, Sunday) (PERIOD, .) (AND, and) (PERIOD, .) (TITLE, Mr.) (CAPITAL, Cox) (AND, and) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, The) (BORN, born) (DIED, died) (PERIOD, .) (HUSBAND, husband) (AND, and) (AND, and) (PERIOD, .) (WEEKDAY, Tuesday) (CAPITAL, Rev) (PERIOD, .) (CAPITAL, Don) (INITIAL, M.) (CAPITAL, Nicholas) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Grant) (CAPITAL, County) (PAPER, Press) (CAPITAL, XXXIII) (NUMBER, 1) (NUMBER, 1) (NUMBER, 5) (MONTH, January) (YEAR, 1928) (NEWLINE, 
+) 

@@ -1,0 +1,18 @@
+(CAPITAL, Grant) (CAPITAL, County) (PAPER, Press) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Ronald) (CAPITAL, Edward) (CAPITAL, Mauzy) (NUMBER, 82) (CAPITAL, Dorcas) (DIED, died) (MONTH, July) (NUMBER, 9) (CAPITAL, Veterans) (CAPITAL, Medical) (CAPITAL, Center) (CAPITAL, Washington) (STATE, D.C.) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(BORN, Born) (MONTH, June) (NUMBER, 5) (YEAR, 1922) (CAPITAL, Petersburg) (SONOF, son of) (CAPITAL, Orva) (INITIAL, J.) (CAPITAL, Mauzy) (AND, and) (CAPITAL, Lena) (CAPITAL, Leota) (LPAREN, () (CAPITAL, Feaster) (RPAREN, )) (CAPITAL, Mauzy) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, He) (WIFE, wife) (NUMBER, 60) (CAPITAL, Mary) (CAPITAL, Elizabeth) (LPAREN, () (CAPITAL, Cox) (RPAREN, )) (CAPITAL, Mauzy) (PERIOD, ;) (CAPITAL, Norma) (CAPITAL, Jean) (CAPITAL, Dean) (CAPITAL, Charlottesville) (STATE, Va.) (CAPITAL, Barbara) (CAPITAL, Lou) (CAPITAL, Kesner) (CAPITAL, Dorcas) (AND, and) (CAPITAL, Debra) (CAPITAL, Sue) (CAPITAL, Hill) (CAPITAL, Clearbrook) (STATE, Va.) (PERIOD, ;) (CAPITAL, Mary) (CAPITAL, Alice) (CAPITAL, Conrad) (CAPITAL, Petersburg) (AND, and) (CAPITAL, Carrie) (CAPITAL, Bergdoll) (MONTH, August) (PERIOD, ;) (CAPITAL, Marvin) (CAPITAL, Mauzy) (CAPITAL, Winchester) (STATE, Va.) (CAPITAL, Raymond) (CAPITAL, Mauzy) (AND, and) (CAPITAL, Glenn) (CAPITAL, Mauzy) (CAPITAL, Dorcas) (PERIOD, ;) (AND, and) (AND, and) (NUMBER, 10) (PERIOD, -) (AND, and) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Funeral) (MONTH, July) (NUMBER, 13) (CAPITAL, Schaeffer) (CAPITAL, Funeral) (CAPITAL, Home) (CAPITAL, Petersburg) (CAPITAL, North) (CAPITAL, Mill) (CAPITAL, Creek) (CAPITAL, Cemetery) (CAPITAL, Dorcas) (PERIOD, .) (LPAREN, () (NUMBER, 7) (PERIOD, -) (NUMBER, 13) (RPAREN, )) (NEWLINE, 
+) 

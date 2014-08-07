@@ -1,0 +1,6 @@
+(CAPITAL, Grant) (CAPITAL, County) (PAPER, Press) (NUMBER, 26) (MONTH, February) (YEAR, 1897) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(TITLE, Mrs.) (CAPITAL, Ward) (CAPITAL, Cox) (DIED, died) (WEEKDAY, Tuesday) (CAPITAL, Brushy) (CAPITAL, Run) (PERIOD, .) (PERIOD, .) (NEWLINE, 
+) 

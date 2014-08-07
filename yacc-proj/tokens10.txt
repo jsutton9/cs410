@@ -1,0 +1,26 @@
+(CAPITAL, Richard) (CAPITAL, Ervin) (CAPITAL, Borror) (NUMBER, 76) (CAPITAL, Landes) (DIED, died) (MONTH, December) (NUMBER, 26) (YEAR, 2004) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(BORN, Born) (MONTH, March) (NUMBER, 9) (YEAR, 1928) (CAPITAL, Landes) (SONOF, son of) (CAPITAL, James) (CAPITAL, Borror) (AND, and) (CAPITAL, Ada) (CAPITAL, Belle) (LPAREN, () (CAPITAL, Judy) (RPAREN, )) (CAPITAL, Borror) (PERIOD, .) (AND, and) (CAPITAL, Arlie) (CAPITAL, Borror) (CAPITAL, Rumsey) (CAPITAL, Borror) (CAPITAL, Edna) (CAPITAL, Riggleman) (CAPITAL, John) (CAPITAL, Borror) (CAPITAL, Dora) (CAPITAL, Cosner) (CAPITAL, Calvin) (CAPITAL, Borror) (CAPITAL, Ronald) (CAPITAL, Borror) (AND, and) (CAPITAL, James) (CAPITAL, Earl) (CAPITAL, Borror) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, He) (WIFE, wife) (NUMBER, 50) (INITIAL, M.) (CAPITAL, Joan) (LPAREN, () (CAPITAL, Kimble) (RPAREN, )) (CAPITAL, Borror) (PERIOD, ;) (CAPITAL, Gary) (INITIAL, A.) (CAPITAL, Borror) (CAPITAL, York) (CAPITAL, Pa) (PERIOD, .) (PERIOD, ;) (CAPITAL, Janice) (CAPITAL, Gregson) (CAPITAL, Charles) (CAPITAL, Elkton) (STATE, Va.) (CAPITAL, Diana) (CAPITAL, Landis) (CAPITAL, David) (CAPITAL, Canton) (CAPITAL, Ohio) (CAPITAL, Brenda) (CAPITAL, Welty) (CAPITAL, Guy) (SUFFIX, Sr.) (CAPITAL, York) (AND, and) (CAPITAL, Tina) (CAPITAL, Coulter) (CAPITAL, Kenneth) (CAPITAL, Grayslake) (CAPITAL, Ill) (PERIOD, .) (PERIOD, ;) (AND, and) (CAPITAL, Guy) (SUFFIX, Jr.) (AND, and) (CAPITAL, Dakota) (CAPITAL, Welty) (AND, and) (CAPITAL, Khelsea) (AND, and) (CAPITAL, Madison) (CAPITAL, Borror) (PERIOD, ;) (AND, and) (PERIOD, -) (AND, and) (CAPITAL, Guy) (CAPITAL, Welty) (CAPITAL, III) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Funeral) (MONTH, December) (NUMBER, 29) (CAPITAL, Schaeffer) (CAPITAL, Funeral) (CAPITAL, Home) (CAPITAL, Petersburg) (CAPITAL, Judy) (CAPITAL, Cemetery) (CAPITAL, Landes) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Military) (CAPITAL, Grant) (CAPITAL, County) (AND, and) (CAPITAL, JROTC) (AND, and) (CAPITAL, Fort) (CAPITAL, Belvoir) (STATE, Va.) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Memorials) (CAPITAL, Progressive) (CAPITAL, Supranuclear) (CAPITAL, Palsy) (CAPITAL, Inc) (PERIOD, .) (YEAR, 1838) (CAPITAL, Greene) (CAPITAL, Tree) (CAPITAL, Road) (CAPITAL, Suite) (NUMBER, 515) (CAPITAL, Baltimore) (CAPITAL, MD) (YEAR, 2120) (NUMBER, 8) (PERIOD, .) (LPAREN, () (NUMBER, 1) (PERIOD, -) (NUMBER, 4) (RPAREN, )) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Grant) (CAPITAL, County) (PAPER, Press) (NEWLINE, 
+) 

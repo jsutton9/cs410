@@ -1,0 +1,84 @@
+(CAPITAL, John) (INITIAL, R.) (CAPITAL, Cox) (ABOUT, about 77) (DIED, died) (CAPITAL, Brushy) (CAPITAL, Run) (WEEKDAY, Sunday) (PERIOD, .)
+
+death (PERIOD, .)
+
+
+(CAPITAL, Iva) (CAPITAL, Catherine) (LPAREN, () (CAPITAL, Borror) (RPAREN, )) (CAPITAL, Porter) (NUMBER, 84) (CAPITAL, Lahmansville) (DIED, died) (WEEKDAY, Friday) (MONTH, December) (NUMBER, 4) (YEAR, 1998) (CAPITAL, Memorial) (CAPITAL, Hospital) (CAPITAL, Cumberland) (CAPITAL, Md) (PERIOD, .)
+
+death (PERIOD, .)
+
+
+(CAPITAL, Carol) (CAPITAL, Sue) (CAPITAL, Reed) (CAPITAL, Cox) (NUMBER, 68) (CAPITAL, Wellsburg) (CAPITAL, WV) (DIED, passed away) (WEEKDAY, Friday) (MONTH, August) (NUMBER, 1) (YEAR, 2008) (CAPITAL, Weirton) (CAPITAL, Medical) (CAPITAL, Center) (CAPITAL, Weirton) (CAPITAL, WV) (PERIOD, .)
+
+death (PERIOD, .)
+
+
+(CAPITAL, Eston) (CAPITAL, Theodore) (CAPITAL, "Buck") (CAPITAL, Kimble) (SUFFIX, Jr.) (NUMBER, 75) (CAPITAL, Kearneysville) (CAPITAL, Petersburg) (DIED, died) (WEEKDAY, Friday) (MONTH, May) (NUMBER, 11) (PERIOD, .)
+
+death (PERIOD, .)
+
+
+(TITLE, Mrs.) (CAPITAL, Ward) (CAPITAL, Cox) (DIED, died) (WEEKDAY, Tuesday) (CAPITAL, Brushy) (CAPITAL, Run) (PERIOD, .)
+
+death (PERIOD, .)
+
+
+(CAPITAL, Junior) (CAPITAL, William) (CAPITAL, Cox) (NUMBER, 73) (CAPITAL, Winchester) (STATE, Va.) (DIED, died) (MONTH, August) (NUMBER, 25) (CAPITAL, Winchester) (CAPITAL, Medical) (CAPITAL, Center) (CAPITAL, Winchester) (PERIOD, .)
+
+death (PERIOD, .)
+
+
+(CAPITAL, Ronald) (CAPITAL, Edward) (CAPITAL, Mauzy) (NUMBER, 82) (CAPITAL, Dorcas) (DIED, died) (MONTH, July) (NUMBER, 9) (CAPITAL, Veterans) (CAPITAL, Medical) (CAPITAL, Center) (CAPITAL, Washington) (STATE, D.C.) (NEWLINE, 
+)
+
+death (NEWLINE, 
+)
+
+
+(CAPITAL, Joseph) (INITIAL, K.) (CAPITAL, Oates) (NUMBER, 68) (DIED, died) (MONTH, May) (NUMBER, 2) (CAPITAL, Arbor) (CAPITAL, West) (CAPITAL, Rehabilitation) (CAPITAL, Center) (CAPITAL, Nursing) (CAPITAL, Home) (CAPITAL, West) (CAPITAL, Jefferson) (CAPITAL, Ohio) (PERIOD, .)
+
+death (PERIOD, .)
+
+
+(TITLE, Mrs.) (CAPITAL, Vera) (INITIAL, M.) (CAPITAL, Cox) (NUMBER, 73) (CAPITAL, Gormania) (DIED, died) (MONTH, May) (NUMBER, 25) (PERIOD, .)
+
+death (PERIOD, .)
+
+
+(CAPITAL, Richard) (CAPITAL, Ervin) (CAPITAL, Borror) (NUMBER, 76) (CAPITAL, Landes) (DIED, died) (MONTH, December) (NUMBER, 26) (YEAR, 2004) (PERIOD, .)
+
+death (PERIOD, .)
+
+
+(CAPITAL, Ervin) (CAPITAL, Rexrode) (NUMBER, 84) (CAPITAL, Brownsville) (CAPITAL, TX) (DIED, passed away) (WEEKDAY, Sunday) (MONTH, October) (NUMBER, 21) (YEAR, 2001) (CAPITAL, Brownsville) (CAPITAL, Medical) (CAPITAL, Center) (PERIOD, .)
+
+death (PERIOD, .)
+
+
+(TITLE, Mrs.) (CAPITAL, Myrtle) (CAPITAL, Anice) (CAPITAL, Propst) (CAPITAL, Rexrode) (NUMBER, 87) (CAPITAL, Franklin) (DIED, died) (MONTH, December) (NUMBER, 10) (CAPITAL, Grant) (CAPITAL, Memorial) (CAPITAL, Hospital) (CAPITAL, Petersburg) (PERIOD, .)
+
+death (PERIOD, .)
+
+
+(CAPITAL, We) (CAPITAL, Civil) (CAPITAL, War) (CAPITAL, Veterans) (TITLE, Mr.) (CAPITAL, Adam) (CAPITAL, Yokum) (DIED, died) (MONTH, February) (NUMBER, 14) (YEAR, 1926) (PERIOD, .)
+
+(CAPITAL, We) (CAPITAL, Civil) (CAPITAL, War) (CAPITAL, Veterans) death (PERIOD, .)
+
+
+(CAPITAL, Henry) (CAPITAL, Wirz) (CAPITAL, Cox) (NUMBER, 70) (CAPITAL, Cabins) (DIED, died) (MONTH, August) (NUMBER, 14) (CAPITAL, Winchester) (CAPITAL, Medical) (CAPITAL, Center) (CAPITAL, Winchester) (STATE, Va.) (NEWLINE, 
+) 
+
+death (NEWLINE, 
+)
+
+
+(CAPITAL, Jonathan) (CAPITAL, Keith) (CAPITAL, Hiser) (NUMBER, 76) (NUMBER, 210) (CAPITAL, Judy) (CAPITAL, St.) (CAPITAL, Petersburg) (DIED, departed) (WEEKDAY, Thursday) (MONTH, May) (NUMBER, 20) (YEAR, 2004) (NEWLINE, 
+) 
+
+death (NEWLINE, 
+)
+
+
+(CAPITAL, GEORGE) (INITIAL, F.) (CAPITAL, CUNNINGHAM) (NUMBER, 74) (DIED, died) (WEEKDAY, Wednesday) (CAPITAL, Murley) (CAPITAL, Branch) (CAPITAL, Flintstone) (CAPITAL, Allegany) (PERIOD, .)
+
+death (PERIOD, .)

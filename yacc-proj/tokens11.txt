@@ -1,0 +1,26 @@
+(CAPITAL, Pendleton) (PAPER, Times) (NUMBER, 8) (MONTH, November) (YEAR, 2001) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Ervin) (CAPITAL, Rexrode) (NUMBER, 84) (CAPITAL, Brownsville) (CAPITAL, TX) (DIED, passed away) (WEEKDAY, Sunday) (MONTH, October) (NUMBER, 21) (YEAR, 2001) (CAPITAL, Brownsville) (CAPITAL, Medical) (CAPITAL, Center) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, He) (BORN, born) (MONTH, April) (NUMBER, 11) (YEAR, 1917) (CAPITAL, Ft.) (CAPITAL, Seybert) (CAPITAL, Glenn) (AND, and) (CAPITAL, Myra) (CAPITAL, Eye) (CAPITAL, Rexrode) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, He) (CAPITAL, United) (CAPITAL, States) (CAPITAL, Air) (CAPITAL, Force) (LPAREN, () (CAPITAL, USAF) (RPAREN, )) (AND, and) (CAPITAL, World) (CAPITAL, War) (CAPITAL, II) (PERIOD, .) (CAPITAL, After) (CAPITAL, USAF) (CAPITAL, National) (CAPITAL, Guard) (PERIOD, .) (CAPITAL, Mason) (AND, and) (CAPITAL, First) (CAPITAL, United) (CAPITAL, Methodist) (CAPITAL, Church) (CAPITAL, Brownsville) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, He) (WIFE, wife) (CAPITAL, Katherine) (CAPITAL, Harness) (CAPITAL, Rexrode) (MONTH, December) (NUMBER, 12) (YEAR, 1988) (PERIOD, .) (CAPITAL, His) (AND, and) (CAPITAL, Delton) (CAPITAL, Rexrode) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, He) (WIFE, wife) (CAPITAL, Helen) (CAPITAL, Owen) (CAPITAL, Rexrode) (CAPITAL, Brownsville) (CAPITAL, TX) (AND, and) (CAPITAL, Mary) (CAPITAL, Kay) (CAPITAL, Loomis) (CAPITAL, Steve) (CAPITAL, Loomis) (CAPITAL, Reddingt) (CAPITAL, CN) (PERIOD, ;) (CAPITAL, Virgil) (CAPITAL, Rexrode) (AND, and) (CAPITAL, Paul) (CAPITAL, Rexrode) (CAPITAL, Frnaklin) (AND, and) (CAPITAL, Fred) (CAPITAL, Rexrode) (CAPITAL, Bridgewater) (CAPITAL, VA) (CAPITAL, Neva) (CAPITAL, Hedrick) (CAPITAL, Columbus) (CAPITAL, OH) (AND, and) (CAPITAL, Leafy) (CAPITAL, Rexrode) (CAPITAL, Franklin) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, A) (NUMBER, 4) (PERIOD, .) (PERIOD, .) (WEEKDAY, Thursday) (MONTH, October) (NUMBER, 25) (CAPITAL, First) (CAPITAL, United) (CAPITAL, Methodist) (CAPITAL, Church) (CAPITAL, Brownsville) (CAPITAL, TX) (PERIOD, .) (NEWLINE, 
+) 

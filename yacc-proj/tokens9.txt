@@ -1,0 +1,14 @@
+(CAPITAL, Grant) (CAPITAL, County) (PAPER, Press) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(TITLE, Mrs.) (CAPITAL, Vera) (INITIAL, M.) (CAPITAL, Cox) (NUMBER, 73) (CAPITAL, Gormania) (DIED, died) (MONTH, May) (NUMBER, 25) (PERIOD, .) (BORN, Born) (MONTH, January) (NUMBER, 14) (YEAR, 1929) (CAPITAL, Benbush) (DAUGHTEROF, daughter of) (CAPITAL, Howard) (INITIAL, E.) (AND, and) (CAPITAL, Nine) (INITIAL, F.) (LPAREN, () (CAPITAL, Pennington) (RPAREN, )) (CAPITAL, Roy) (PERIOD, .) (HUSBAND, husband) (CAPITAL, Claude) (CAPITAL, Miller) (AND, and) (CAPITAL, James) (CAPITAL, Cox) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, She) (CAPITAL, Sandra) (INITIAL, E.) (CAPITAL, Evans) (CAPITAL, Bayard) (PERIOD, ;) (CAPITAL, Claude) (INITIAL, E.) (CAPITAL, Miller) (AND, and) (CAPITAL, Bruce) (INITIAL, A.) (CAPITAL, Miller) (CAPITAL, Gormania) (AND, and) (CAPITAL, Joseph) (INITIAL, W.) (CAPITAL, Miller) (CAPITAL, Deer) (CAPITAL, Park) (CAPITAL, Md) (PERIOD, .) (PERIOD, ;) (CAPITAL, Hilda) (CAPITAL, Guthrie) (CAPITAL, Bayard) (PERIOD, ;) (NUMBER, 21) (AND, and) (AND, and) (NUMBER, 15) (PERIOD, -) (AND, and) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Funeral) (MONTH, May) (NUMBER, 28) (CAPITAL, Stewart) (CAPITAL, Funeral) (CAPITAL, Home) (CAPITAL, Oakland) (CAPITAL, Md) (PERIOD, .) (CAPITAL, Bayard) (CAPITAL, Cemetery) (CAPITAL, Bayard) (PERIOD, .) (LPAREN, () (NUMBER, 5) (NUMBER, 28) (RPAREN, )) (NEWLINE, 
+) 

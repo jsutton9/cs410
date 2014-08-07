@@ -1,0 +1,104 @@
+(CAPITAL, Grant) (CAPITAL, County) (PAPER, Press) (CAPITAL, XXXIII) (NUMBER, 1) (NUMBER, 1) (NUMBER, 5) (MONTH, January) (YEAR, 1928) (NEWLINE, 
+)
+
+reference (CAPITAL, XXXIII) (NUMBER, 1) (NUMBER, 1) (NUMBER, 5) date (NEWLINE, 
+)
+
+
+(CAPITAL, Cumberland) (PAPER, Times) (PERIOD, -)
+
+reference (PERIOD, -)
+
+
+(MONTH, May) (NUMBER, 16) (YEAR, 2007) (CAPITAL, Grant) (CAPITAL, County) (PAPER, Press) (NEWLINE, 
+)
+
+date reference (NEWLINE, 
+)
+
+
+(CAPITAL, Grant) (CAPITAL, County) (PAPER, Press) (NUMBER, 26) (MONTH, February) (YEAR, 1897) (NEWLINE, 
+)
+
+reference date (NEWLINE, 
+)
+
+
+(CAPITAL, Grant) (CAPITAL, County) (PAPER, Press) (NEWLINE, 
+)
+
+reference (NEWLINE, 
+)
+
+
+(CAPITAL, Grant) (CAPITAL, County) (PAPER, Press) (NEWLINE, 
+)
+
+reference (NEWLINE, 
+)
+
+
+(CAPITAL, Grant) (CAPITAL, County) (PAPER, Press) (NEWLINE, 
+)
+
+reference (NEWLINE, 
+)
+
+
+(CAPITAL, Grant) (CAPITAL, County) (PAPER, Press) (NEWLINE, 
+)
+
+reference (NEWLINE, 
+)
+
+
+(CAPITAL, Grant) (CAPITAL, County) (PAPER, Press) (NEWLINE, 
+)
+
+reference (NEWLINE, 
+)
+
+
+(CAPITAL, Pendleton) (PAPER, Times) (NUMBER, 8) (MONTH, November) (YEAR, 2001) (NEWLINE, 
+)
+
+reference date (NEWLINE, 
+)
+
+
+(CAPITAL, Grant) (CAPITAL, County) (PAPER, Press) (NEWLINE, 
+)
+
+reference (NEWLINE, 
+)
+
+
+(CAPITAL, Grant) (CAPITAL, County) (PAPER, Press) (MONTH, March) (NUMBER, 20) (YEAR, 1903) (NEWLINE, 
+)
+
+reference date (NEWLINE, 
+)
+
+
+(CAPITAL, Pendleton) (PAPER, Times) (MONTH, February) (NUMBER, 26) (YEAR, 1926) (PERIOD, :)
+
+reference date (PERIOD, :)
+
+
+(CAPITAL, Grant) (CAPITAL, County) (PAPER, Press) (NEWLINE, 
+)
+
+reference (NEWLINE, 
+)
+
+
+(CAPITAL, Elkins) (PAPER, Intermountain) (NEWLINE, 
+)
+
+reference (NEWLINE, 
+)
+
+
+(CAPITAL, The) (CAPITAL, Evening) (CAPITAL, Post) (PAPER, Newspaper) (PERIOD, -)
+
+reference (PERIOD, -)

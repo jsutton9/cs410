@@ -1,0 +1,10 @@
+(CAPITAL, GEORGE) (INITIAL, F.) (CAPITAL, CUNNINGHAM) (NUMBER, 74) (DIED, died) (WEEKDAY, Wednesday) (CAPITAL, Murley) (CAPITAL, Branch) (CAPITAL, Flintstone) (CAPITAL, Allegany) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, He) (CAPITAL, McNeill) (CAPITAL, Rangers) (CAPITAL, Confederate) (CAPITAL, Army) (AND, and) (CAPITAL, Federal) (CAPITAL, Crook) (AND, and) (CAPITAL, Kelley) (CAPITAL, Cumberland) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Source) (PERIOD, :) (CAPITAL, The) (CAPITAL, Evening) (CAPITAL, Post) (PAPER, Newspaper) (PERIOD, -) (CAPITAL, Frederick) (CAPITAL, Frederick) (CAPITAL, Co) (PERIOD, .) (CAPITAL, Maryland) (PERIOD, -) (WEEKDAY, Saturday) (MONTH, September) (NUMBER, 2) (YEAR, 1911) (NEWLINE, 
+) 

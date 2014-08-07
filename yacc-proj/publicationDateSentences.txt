@@ -1,0 +1,12 @@
+(MONTH, December) (NUMBER, 5) (YEAR, 1998) (NEWLINE, 
+)
+
+date (NEWLINE, 
+)
+
+
+(WEEKDAY, Saturday) (MONTH, September) (NUMBER, 2) (YEAR, 1911) (NEWLINE, 
+)
+
+date (NEWLINE, 
+)

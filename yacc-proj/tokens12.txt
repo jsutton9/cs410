@@ -1,0 +1,26 @@
+(TITLE, Mrs.) (CAPITAL, Myrtle) (CAPITAL, Anice) (CAPITAL, Propst) (CAPITAL, Rexrode) (NUMBER, 87) (CAPITAL, Franklin) (DIED, died) (MONTH, December) (NUMBER, 10) (CAPITAL, Grant) (CAPITAL, Memorial) (CAPITAL, Hospital) (CAPITAL, Petersburg) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(BORN, Born) (MONTH, October) (NUMBER, 8) (YEAR, 1919) (CAPITAL, Franklin) (DAUGHTEROF, daughter of) (CAPITAL, Jacob) (CAPITAL, Propst) (AND, and) (CAPITAL, Mahulda) (LPAREN, () (CAPITAL, Propst) (RPAREN, )) (CAPITAL, Propst) (PERIOD, .) (AND, and) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, She) (HUSBAND, husband) (CAPITAL, Virgil) (INITIAL, H.) (CAPITAL, Rexrode) (MARRIED, married) (MONTH, April) (NUMBER, 19) (YEAR, 1945) (PERIOD, ;) (CAPITAL, Stephen) (CAPITAL, Dale) (CAPITAL, Rexrode) (CAPITAL, Petersburg) (PERIOD, ;) (CAPITAL, Irvin) (INITIAL, S.) (CAPITAL, Propst) (CAPITAL, Brandywine) (AND, and) (CAPITAL, Richard) (CAPITAL, Propst) (CAPITAL, Harrisonburg) (STATE, Va.) (PERIOD, ;) (AND, and) (CAPITAL, Amy) (CAPITAL, Berg) (CAPITAL, Petersburg) (AND, and) (CAPITAL, Robert) (CAPITAL, Rexrode) (CAPITAL, Davis) (PERIOD, ;) (AND, and) (CAPITAL, Michael) (CAPITAL, Meek) (CAPITAL, New) (CAPITAL, Creek) (AND, and) (CAPITAL, Cynthia) (CAPITAL, Hartman) (CAPITAL, Petersburg) (PERIOD, ;) (PERIOD, -) (AND, and) (AND, and) (PERIOD, -) (AND, and) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Funeral) (MONTH, December) (NUMBER, 15) (CAPITAL, Faith) (CAPITAL, Lutheran) (CAPITAL, Church) (CAPITAL, Franklin) (PERIOD, .) (CAPITAL, Interment) (CAPITAL, Cedar) (CAPITAL, Hill) (CAPITAL, Cemetery) (CAPITAL, Franklin) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Memorials) (CAPITAL, Faith) (CAPITAL, Lutheran) (CAPITAL, Church) (CAPITAL, Special) (CAPITAL, Music) (CAPITAL, Fund) (INITIAL, P.) (INITIAL, O.) (CAPITAL, Box) (NUMBER, 893) (CAPITAL, Franklin) (CAPITAL, WV) (YEAR, 2680) (NUMBER, 7) (CAPITAL, Pendleton) (CAPITAL, County) (CAPITAL, Rescue) (CAPITAL, Squad) (INITIAL, P.) (INITIAL, O.) (CAPITAL, Box) (NUMBER, 727) (CAPITAL, Franklin) (CAPITAL, WV) (YEAR, 2680) (NUMBER, 7) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Arrangements) (CAPITAL, Kimble) (CAPITAL, Funeral) (CAPITAL, Home) (CAPITAL, Franklin) (PERIOD, .) (LPAREN, () (NUMBER, 12) (PERIOD, -) (NUMBER, 19) (RPAREN, )) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Grant) (CAPITAL, County) (PAPER, Press) (NEWLINE, 
+) 

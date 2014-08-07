@@ -1,0 +1,63 @@
+(HUSBAND, husband) (CAPITAL, Charles) (CAPITAL, William) (CAPITAL, Porter) (MONTH, July) (NUMBER, 5) (YEAR, 1978) (PERIOD, ;)
+
+spouse (PERIOD, ;)
+
+
+(CAPITAL, Surviving) (CAPITAL, Her) (HUSBAND, husband) (CAPITAL, Leon) (CAPITAL, Cox) (NUMBER, 45) (CAPITAL, Home) (CAPITAL, Two) (CAPITAL, Sons) (CAPITAL, Stephen) (CAPITAL, Cox) (CAPITAL, Wellsburg) (CAPITAL, WV) (CAPITAL, Timothy) (CAPITAL, Cox) (AND, and) (CAPITAL, His) (CAPITAL, Wife) (CAPITAL, Kristen) (CAPITAL, Murraysville) (CAPITAL, PA) (CAPITAL, Two) (CAPITAL, Brothers) (CAPITAL, Kenneth) (CAPITAL, Reed) (AND, and) (CAPITAL, His) (CAPITAL, Wife) (CAPITAL, Amma) (CAPITAL, Barefoot) (CAPITAL, Bay) (CAPITAL, FL) (AND, and) (CAPITAL, Joseph) (CAPITAL, Reed) (AND, and) (CAPITAL, His) (CAPITAL, Companion) (CAPITAL, Linda) (CAPITAL, Gregan) (CAPITAL, Philippi) (CAPITAL, WV) (AND, and) (CAPITAL, Two) (CAPITAL, Grandsons) (CAPITAL, Kevin) (AND, and) (CAPITAL, Brian) (CAPITAL, Cox) (CAPITAL, Murraysville) (CAPITAL, PA) (PERIOD, .)
+
+(CAPITAL, Surviving) (CAPITAL, Her) spouse (CAPITAL, Home) (CAPITAL, Two) (CAPITAL, Sons) (CAPITAL, Stephen) (CAPITAL, Cox) (CAPITAL, Wellsburg) (CAPITAL, WV) (CAPITAL, Timothy) (CAPITAL, Cox) (AND, and) (CAPITAL, His) (CAPITAL, Wife) (CAPITAL, Kristen) (CAPITAL, Murraysville) (CAPITAL, PA) (CAPITAL, Two) (CAPITAL, Brothers) (CAPITAL, Kenneth) (CAPITAL, Reed) (AND, and) (CAPITAL, His) (CAPITAL, Wife) (CAPITAL, Amma) (CAPITAL, Barefoot) (CAPITAL, Bay) (CAPITAL, FL) (AND, and) (CAPITAL, Joseph) (CAPITAL, Reed) (AND, and) (CAPITAL, His) (CAPITAL, Companion) (CAPITAL, Linda) (CAPITAL, Gregan) (CAPITAL, Philippi) (CAPITAL, WV) (AND, and) (CAPITAL, Two) (CAPITAL, Grandsons) (CAPITAL, Kevin) (AND, and) (CAPITAL, Brian) (CAPITAL, Cox) (CAPITAL, Murraysville) (CAPITAL, PA) (PERIOD, .)
+
+
+(CAPITAL, He) (WIFE, wife) (NUMBER, 52) (CAPITAL, Suenette) (LPAREN, () (CAPITAL, Judy) (RPAREN, )) (CAPITAL, Kimble) (PERIOD, ;)
+
+(CAPTIAL, He) spouse (PERIOD, ;)
+
+
+(CAPITAL, He) (WIFE, wife) (CAPITAL, Kay) (INITIAL, Y.) (CAPITAL, Cox) (MARRIED, married) (MONTH, April) (NUMBER, 29) (YEAR, 1970) (CAPITAL, Seoul) (CAPITAL, South) (CAPITAL, Korea) (PERIOD, ;)
+
+(CAPITAL, He) spouse (PERIOD, ;)
+
+
+(CAPITAL, He) (WIFE, wife) (NUMBER, 60) (CAPITAL, Mary) (CAPITAL, Elizabeth) (LPAREN, () (CAPITAL, Cox) (RPAREN, )) (CAPITAL, Mauzy) (PERIOD, ;)
+
+(CAPITAL, He) spouse (PERIOD, ;)
+
+
+(HUSBAND, husband) (CAPITAL, Claude) (CAPITAL, Miller) (AND, and) (CAPITAL, James) (CAPITAL, Cox) (PERIOD, .)
+
+spouse (PERIOD, .)
+
+
+(CAPITAL, He) (WIFE, wife) (NUMBER, 50) (INITIAL, M.) (CAPITAL, Joan) (LPAREN, () (CAPITAL, Kimble) (RPAREN, )) (CAPITAL, Borror) (PERIOD, ;)
+
+(CAPITAL, He) spouse (PERIOD, ;)
+
+
+(CAPITAL, He) (WIFE, wife) (CAPITAL, Katherine) (CAPITAL, Harness) (CAPITAL, Rexrode) (MONTH, December) (NUMBER, 12) (YEAR, 1988) (PERIOD, .)
+
+(CAPITAL, He) spouse (PERIOD, .)
+
+
+(CAPITAL, He) (WIFE, wife) (CAPITAL, Helen) (CAPITAL, Owen) (CAPITAL, Rexrode) (CAPITAL, Brownsville) (CAPITAL, TX) (AND, and) (CAPITAL, Mary) (CAPITAL, Kay) (CAPITAL, Loomis) (AND, and) (HUSBAND, husband) (CAPITAL, Steve) (CAPITAL, Loomis) (CAPITAL, Reddingt) (CAPITAL, CN) (PERIOD, ;)
+
+(CAPITAL, He) spouse (AND, and) (CAPITAL, Mary) (CAPITAL, Kay) (CAPITAL, Loomis) (AND, and) (HUSBAND, husband) (CAPITAL, Steve) (CAPITAL, Loomis) (CAPITAL, Reddingt) (CAPITAL, CN) (PERIOD, ;)
+
+
+(CAPITAL, She) (HUSBAND, husband) (CAPITAL, Virgil) (INITIAL, H.) (CAPITAL, Rexrode) (MARRIED, married) (MONTH, April) (NUMBER, 19) (YEAR, 1945) (PERIOD, ;)
+
+(CAPITAL, She) spouse (PERIOD, ;)
+
+
+(TITLE, Mr.) (CAPITAL, Yokum) (MARRIAGE, marriage) (CAPITAL, Rebecca) (CAPITAL, Mouse) (AND, and) (BORN, born) (PERIOD, ;)
+
+(TITLE, Mr.) (CAPITAL, Yokum) spouse (AND, and) (BORN, born) (PERIOD, ;)
+
+
+(WIFE, wife) (CAPITAL, Jean) (LPAREN, () (CAPITAL, Blakiston) (RPAREN, )) (CAPITAL, Cox) (PERIOD, .)
+
+spouse (PERIOD, .)
+
+
+(CAPITAL, In) (YEAR, 1950) (MARRIED, married) (CAPITAL, Norma) (CAPITAL, Hardy) (AND, and) (CAPITAL, Joan) (INITIAL, M.) (CAPITAL, Wertz) (CAPITAL, Morrisdale) (CAPITAL, Pa) (PERIOD, .)
+
+(CAPITAL, In) spouse (AND, and) (CAPITAL, Joan) (INITIAL, M.) (CAPITAL, Wertz) (CAPITAL, Morrisdale) (CAPITAL, Pa) (PERIOD, .)

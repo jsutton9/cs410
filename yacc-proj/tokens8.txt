@@ -1,0 +1,18 @@
+(CAPITAL, Grant) (CAPITAL, County) (PAPER, Press) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Joseph) (INITIAL, K.) (CAPITAL, Oates) (NUMBER, 68) (DIED, died) (MONTH, May) (NUMBER, 2) (CAPITAL, Arbor) (CAPITAL, West) (CAPITAL, Rehabilitation) (CAPITAL, Center) (CAPITAL, Nursing) (CAPITAL, Home) (CAPITAL, West) (CAPITAL, Jefferson) (CAPITAL, Ohio) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(BORN, Born) (MONTH, February) (NUMBER, 10) (YEAR, 1938) (CAPITAL, Petersburg) (SONOF, son of) (CAPITAL, Pearl) (CAPITAL, Riley) (CAPITAL, Oates) (AND, and) (INITIAL, O.) (INITIAL, R.) (CAPITAL, Oates) (SUFFIX, Sr.) (INITIAL, O.) (INITIAL, R.) (CAPITAL, Oates) (SUFFIX, Jr.) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, He) (CAPITAL, Teresa) (CAPITAL, Ellars) (CAPITAL, Rodney) (CAPITAL, Somerset) (PERIOD, ;) (AND, and) (CAPITAL, Brenda) (CAPITAL, Cox) (CAPITAL, Jim) (CAPITAL, Marysville) (PERIOD, ;) (CAPITAL, Gerald) (CAPITAL, Oates) (CAPITAL, Polley) (CAPITAL, Keyser) (PERIOD, ;) (AND, and) (CAPITAL, Phyllis) (CAPITAL, Oates) (CAPITAL, Smith) (CAPITAL, Petersburg) (PERIOD, ;) (CAPITAL, Norma) (CAPITAL, Oates) (CAPITAL, Lee) (CAPITAL, Bill) (CAPITAL, Waynesboro) (STATE, Va.) (PERIOD, ;) (CAPITAL, Carolyn) (CAPITAL, Oates) (CAPITAL, Riggleman) (CAPITAL, Marcelle) (CAPITAL, Stephens) (CAPITAL, City) (PERIOD, ;) (AND, and) (CAPITAL, Elizabeth) (CAPITAL, Oates) (CAPITAL, Smith) (CAPITAL, Williford) (CAPITAL, Norfolk) (PERIOD, .) (PERIOD, -) (PERIOD, -) (CAPITAL, Betty) (CAPITAL, Wolfe) (CAPITAL, Oates) (AND, and) (AND, and) (AND, and) (AND, and) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, It) (AND, and) (CAPITAL, Somerset) (PERIOD, .) (LPAREN, () (NUMBER, 5) (PERIOD, -) (NUMBER, 9) (RPAREN, )) (NEWLINE, 
+) 

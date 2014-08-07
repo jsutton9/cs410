@@ -1,0 +1,2656 @@
+Created by PLY version 3.4 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> obituary
+Rule 1     obituary -> sentence obituary
+Rule 2     obituary -> sentence
+Rule 3     sentence -> referenceSentence
+Rule 4     sentence -> publicationDateSentence
+Rule 5     sentence -> birthSentence
+Rule 6     sentence -> deathSentence
+Rule 7     sentence -> spouseSentence
+Rule 8     name -> CAPITAL subname
+Rule 9     name -> INITIAL subname
+Rule 10    name -> CAPITAL subname SUFFIX
+Rule 11    name -> TITLE name
+Rule 12    subname -> CAPITAL
+Rule 13    subname -> CAPITAL subname
+Rule 14    subname -> nee subname
+Rule 15    subname -> INITIAL subname
+Rule 16    nee -> LPAREN CAPITAL RPAREN
+Rule 17    names -> name AND name
+Rule 18    names -> CAPITAL AND name
+Rule 19    names -> CAPITAL INITIAL AND name
+Rule 20    names -> CAPITAL INITIAL SUFFIX AND name
+Rule 21    date -> WEEKDAY date
+Rule 22    date -> NUMBER MONTH
+Rule 23    date -> MONTH NUMBER
+Rule 24    date -> NUMBER MONTH YEAR
+Rule 25    date -> MONTH NUMBER YEAR
+Rule 26    referenceSentence -> reference PERIOD
+Rule 27    referenceSentence -> reference NEWLINE
+Rule 28    referenceSentence -> reference date PERIOD
+Rule 29    referenceSentence -> reference date NEWLINE
+Rule 30    referenceSentence -> date reference NEWLINE
+Rule 31    referenceSentence -> reference miscellany date NEWLINE
+Rule 32    miscellany -> CAPITAL NUMBER NUMBER
+Rule 33    reference -> CAPITAL PAPER
+Rule 34    reference -> CAPITAL reference
+Rule 35    publicationDateSentence -> date NEWLINE
+Rule 36    place -> CAPITAL place
+Rule 37    place -> CAPITAL
+Rule 38    place -> STATE
+Rule 39    deathSentence -> death PERIOD
+Rule 40    deathSentence -> death NEWLINE
+Rule 41    deathSentence -> deathIntro death
+Rule 42    deathIntro -> CAPITAL deathIntro
+Rule 43    deathIntro -> TITLE
+Rule 44    death -> name deathPhrase DIED deathPredicate
+Rule 45    death -> name DIED deathPredicate
+Rule 46    deathPhrase -> NUMBER
+Rule 47    deathPhrase -> NUMBER place
+Rule 48    deathPhrase -> NUMBER NUMBER place
+Rule 49    deathPredicate -> place WEEKDAY
+Rule 50    deathPredicate -> date place
+Rule 51    deathPredicate -> date
+Rule 52    deathPredicate -> WEEKDAY place
+Rule 53    birthSentence -> birth PERIOD
+Rule 54    birthSentence -> birth NEWLINE
+Rule 55    birthSentence -> CAPITAL birth PERIOD
+Rule 56    birthSentence -> birth SUFFIX
+Rule 57    birth -> BORN date place names
+Rule 58    birth -> BORN date place SONOF names
+Rule 59    birth -> BORN date place DAUGHTEROF names
+Rule 60    spouseSentence -> spouse spouseSentenceEnd
+Rule 61    spouseSentence -> CAPITAL spouse spouseSentenceEnd
+Rule 62    spouseSentence -> CAPITAL CAPITAL spouse spouseSentenceEnd
+Rule 63    spouseSentence -> TITLE CAPITAL spouse spouseSentenceEnd
+Rule 64    spouseSentenceEnd -> CAPITAL spouseSentenceEnd
+Rule 65    spouseSentenceEnd -> AND spouseSentenceEnd
+Rule 66    spouseSentenceEnd -> HUSBAND spouseSentenceEnd
+Rule 67    spouseSentenceEnd -> BORN spouseSentenceEnd
+Rule 68    spouseSentenceEnd -> PERIOD
+Rule 69    spouse -> HUSBAND name
+Rule 70    spouse -> HUSBAND name date
+Rule 71    spouse -> HUSBAND name NUMBER
+Rule 72    spouse -> HUSBAND name MARRIED date
+Rule 73    spouse -> HUSBAND name AND name
+Rule 74    spouse -> WIFE name
+Rule 75    spouse -> WIFE NUMBER name
+Rule 76    spouse -> WIFE name MARRIED date place
+Rule 77    spouse -> MARRIAGE name
+Rule 78    spouse -> YEAR MARRIED name
+
+Terminals, with rules where they appear
+
+AND                  : 17 18 19 20 65 73
+BORN                 : 57 58 59 67
+CAPITAL              : 8 10 12 13 16 18 19 20 32 33 34 36 37 42 55 61 62 62 63 64
+DAUGHTEROF           : 59
+DIED                 : 44 45
+HUSBAND              : 66 69 70 71 72 73
+INITIAL              : 9 15 19 20
+LPAREN               : 16
+MARRIAGE             : 77
+MARRIED              : 72 76 78
+MONTH                : 22 23 24 25
+NEWLINE              : 27 29 30 31 35 40 54
+NUMBER               : 22 23 24 25 32 32 46 47 48 48 71 75
+PAPER                : 33
+PERIOD               : 26 28 39 53 55 68
+RPAREN               : 16
+SONOF                : 58
+STATE                : 38
+SUFFIX               : 10 20 56
+TITLE                : 11 43 63
+WEEKDAY              : 21 49 52
+WIFE                 : 74 75 76
+YEAR                 : 24 25 78
+error                : 
+
+Nonterminals, with rules where they appear
+
+birth                : 53 54 55 56
+birthSentence        : 5
+date                 : 21 28 29 30 31 35 50 51 57 58 59 70 72 76
+death                : 39 40 41
+deathIntro           : 41 42
+deathPhrase          : 44
+deathPredicate       : 44 45
+deathSentence        : 6
+miscellany           : 31
+name                 : 11 17 17 18 19 20 44 45 69 70 71 72 73 73 74 75 76 77 78
+names                : 57 58 59
+nee                  : 14
+obituary             : 1 0
+place                : 36 47 48 49 50 52 57 58 59 76
+publicationDateSentence : 4
+reference            : 26 27 28 29 30 31 34
+referenceSentence    : 3
+sentence             : 1 2
+spouse               : 60 61 62 63
+spouseSentence       : 7
+spouseSentenceEnd    : 60 61 62 63 64 65 66 67
+subname              : 8 9 10 13 14 15
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . obituary
+    (1) obituary -> . sentence obituary
+    (2) obituary -> . sentence
+    (3) sentence -> . referenceSentence
+    (4) sentence -> . publicationDateSentence
+    (5) sentence -> . birthSentence
+    (6) sentence -> . deathSentence
+    (7) sentence -> . spouseSentence
+    (26) referenceSentence -> . reference PERIOD
+    (27) referenceSentence -> . reference NEWLINE
+    (28) referenceSentence -> . reference date PERIOD
+    (29) referenceSentence -> . reference date NEWLINE
+    (30) referenceSentence -> . date reference NEWLINE
+    (31) referenceSentence -> . reference miscellany date NEWLINE
+    (35) publicationDateSentence -> . date NEWLINE
+    (53) birthSentence -> . birth PERIOD
+    (54) birthSentence -> . birth NEWLINE
+    (55) birthSentence -> . CAPITAL birth PERIOD
+    (56) birthSentence -> . birth SUFFIX
+    (39) deathSentence -> . death PERIOD
+    (40) deathSentence -> . death NEWLINE
+    (41) deathSentence -> . deathIntro death
+    (60) spouseSentence -> . spouse spouseSentenceEnd
+    (61) spouseSentence -> . CAPITAL spouse spouseSentenceEnd
+    (62) spouseSentence -> . CAPITAL CAPITAL spouse spouseSentenceEnd
+    (63) spouseSentence -> . TITLE CAPITAL spouse spouseSentenceEnd
+    (33) reference -> . CAPITAL PAPER
+    (34) reference -> . CAPITAL reference
+    (21) date -> . WEEKDAY date
+    (22) date -> . NUMBER MONTH
+    (23) date -> . MONTH NUMBER
+    (24) date -> . NUMBER MONTH YEAR
+    (25) date -> . MONTH NUMBER YEAR
+    (57) birth -> . BORN date place names
+    (58) birth -> . BORN date place SONOF names
+    (59) birth -> . BORN date place DAUGHTEROF names
+    (44) death -> . name deathPhrase DIED deathPredicate
+    (45) death -> . name DIED deathPredicate
+    (42) deathIntro -> . CAPITAL deathIntro
+    (43) deathIntro -> . TITLE
+    (69) spouse -> . HUSBAND name
+    (70) spouse -> . HUSBAND name date
+    (71) spouse -> . HUSBAND name NUMBER
+    (72) spouse -> . HUSBAND name MARRIED date
+    (73) spouse -> . HUSBAND name AND name
+    (74) spouse -> . WIFE name
+    (75) spouse -> . WIFE NUMBER name
+    (76) spouse -> . WIFE name MARRIED date place
+    (77) spouse -> . MARRIAGE name
+    (78) spouse -> . YEAR MARRIED name
+    (8) name -> . CAPITAL subname
+    (9) name -> . INITIAL subname
+    (10) name -> . CAPITAL subname SUFFIX
+    (11) name -> . TITLE name
+
+    CAPITAL         shift and go to state 18
+    TITLE           shift and go to state 2
+    WEEKDAY         shift and go to state 7
+    NUMBER          shift and go to state 4
+    MONTH           shift and go to state 24
+    BORN            shift and go to state 6
+    HUSBAND         shift and go to state 11
+    WIFE            shift and go to state 23
+    MARRIAGE        shift and go to state 12
+    YEAR            shift and go to state 3
+    INITIAL         shift and go to state 14
+
+    obituary                       shift and go to state 8
+    death                          shift and go to state 9
+    spouseSentence                 shift and go to state 21
+    referenceSentence              shift and go to state 15
+    reference                      shift and go to state 1
+    sentence                       shift and go to state 10
+    deathSentence                  shift and go to state 16
+    publicationDateSentence        shift and go to state 5
+    name                           shift and go to state 22
+    birthSentence                  shift and go to state 25
+    birth                          shift and go to state 17
+    date                           shift and go to state 19
+    spouse                         shift and go to state 20
+    deathIntro                     shift and go to state 13
+
+state 1
+
+    (26) referenceSentence -> reference . PERIOD
+    (27) referenceSentence -> reference . NEWLINE
+    (28) referenceSentence -> reference . date PERIOD
+    (29) referenceSentence -> reference . date NEWLINE
+    (31) referenceSentence -> reference . miscellany date NEWLINE
+    (21) date -> . WEEKDAY date
+    (22) date -> . NUMBER MONTH
+    (23) date -> . MONTH NUMBER
+    (24) date -> . NUMBER MONTH YEAR
+    (25) date -> . MONTH NUMBER YEAR
+    (32) miscellany -> . CAPITAL NUMBER NUMBER
+
+    PERIOD          shift and go to state 27
+    NEWLINE         shift and go to state 26
+    WEEKDAY         shift and go to state 7
+    NUMBER          shift and go to state 4
+    MONTH           shift and go to state 24
+    CAPITAL         shift and go to state 28
+
+    date                           shift and go to state 30
+    miscellany                     shift and go to state 29
+
+state 2
+
+    (63) spouseSentence -> TITLE . CAPITAL spouse spouseSentenceEnd
+    (43) deathIntro -> TITLE .
+    (11) name -> TITLE . name
+    (8) name -> . CAPITAL subname
+    (9) name -> . INITIAL subname
+    (10) name -> . CAPITAL subname SUFFIX
+    (11) name -> . TITLE name
+
+  ! shift/reduce conflict for CAPITAL resolved as shift
+  ! shift/reduce conflict for INITIAL resolved as shift
+  ! shift/reduce conflict for TITLE resolved as shift
+    CAPITAL         shift and go to state 33
+    INITIAL         shift and go to state 14
+    TITLE           shift and go to state 32
+
+  ! CAPITAL         [ reduce using rule 43 (deathIntro -> TITLE .) ]
+  ! INITIAL         [ reduce using rule 43 (deathIntro -> TITLE .) ]
+  ! TITLE           [ reduce using rule 43 (deathIntro -> TITLE .) ]
+
+    name                           shift and go to state 31
+
+state 3
+
+    (78) spouse -> YEAR . MARRIED name
+
+    MARRIED         shift and go to state 34
+
+
+state 4
+
+    (22) date -> NUMBER . MONTH
+    (24) date -> NUMBER . MONTH YEAR
+
+    MONTH           shift and go to state 35
+
+
+state 5
+
+    (4) sentence -> publicationDateSentence .
+
+    CAPITAL         reduce using rule 4 (sentence -> publicationDateSentence .)
+    TITLE           reduce using rule 4 (sentence -> publicationDateSentence .)
+    WEEKDAY         reduce using rule 4 (sentence -> publicationDateSentence .)
+    NUMBER          reduce using rule 4 (sentence -> publicationDateSentence .)
+    MONTH           reduce using rule 4 (sentence -> publicationDateSentence .)
+    BORN            reduce using rule 4 (sentence -> publicationDateSentence .)
+    HUSBAND         reduce using rule 4 (sentence -> publicationDateSentence .)
+    WIFE            reduce using rule 4 (sentence -> publicationDateSentence .)
+    MARRIAGE        reduce using rule 4 (sentence -> publicationDateSentence .)
+    YEAR            reduce using rule 4 (sentence -> publicationDateSentence .)
+    INITIAL         reduce using rule 4 (sentence -> publicationDateSentence .)
+    $end            reduce using rule 4 (sentence -> publicationDateSentence .)
+
+
+state 6
+
+    (57) birth -> BORN . date place names
+    (58) birth -> BORN . date place SONOF names
+    (59) birth -> BORN . date place DAUGHTEROF names
+    (21) date -> . WEEKDAY date
+    (22) date -> . NUMBER MONTH
+    (23) date -> . MONTH NUMBER
+    (24) date -> . NUMBER MONTH YEAR
+    (25) date -> . MONTH NUMBER YEAR
+
+    WEEKDAY         shift and go to state 7
+    NUMBER          shift and go to state 4
+    MONTH           shift and go to state 24
+
+    date                           shift and go to state 36
+
+state 7
+
+    (21) date -> WEEKDAY . date
+    (21) date -> . WEEKDAY date
+    (22) date -> . NUMBER MONTH
+    (23) date -> . MONTH NUMBER
+    (24) date -> . NUMBER MONTH YEAR
+    (25) date -> . MONTH NUMBER YEAR
+
+    WEEKDAY         shift and go to state 7
+    NUMBER          shift and go to state 4
+    MONTH           shift and go to state 24
+
+    date                           shift and go to state 37
+
+state 8
+
+    (0) S' -> obituary .
+
+
+
+state 9
+
+    (39) deathSentence -> death . PERIOD
+    (40) deathSentence -> death . NEWLINE
+
+    PERIOD          shift and go to state 39
+    NEWLINE         shift and go to state 38
+
+
+state 10
+
+    (1) obituary -> sentence . obituary
+    (2) obituary -> sentence .
+    (1) obituary -> . sentence obituary
+    (2) obituary -> . sentence
+    (3) sentence -> . referenceSentence
+    (4) sentence -> . publicationDateSentence
+    (5) sentence -> . birthSentence
+    (6) sentence -> . deathSentence
+    (7) sentence -> . spouseSentence
+    (26) referenceSentence -> . reference PERIOD
+    (27) referenceSentence -> . reference NEWLINE
+    (28) referenceSentence -> . reference date PERIOD
+    (29) referenceSentence -> . reference date NEWLINE
+    (30) referenceSentence -> . date reference NEWLINE
+    (31) referenceSentence -> . reference miscellany date NEWLINE
+    (35) publicationDateSentence -> . date NEWLINE
+    (53) birthSentence -> . birth PERIOD
+    (54) birthSentence -> . birth NEWLINE
+    (55) birthSentence -> . CAPITAL birth PERIOD
+    (56) birthSentence -> . birth SUFFIX
+    (39) deathSentence -> . death PERIOD
+    (40) deathSentence -> . death NEWLINE
+    (41) deathSentence -> . deathIntro death
+    (60) spouseSentence -> . spouse spouseSentenceEnd
+    (61) spouseSentence -> . CAPITAL spouse spouseSentenceEnd
+    (62) spouseSentence -> . CAPITAL CAPITAL spouse spouseSentenceEnd
+    (63) spouseSentence -> . TITLE CAPITAL spouse spouseSentenceEnd
+    (33) reference -> . CAPITAL PAPER
+    (34) reference -> . CAPITAL reference
+    (21) date -> . WEEKDAY date
+    (22) date -> . NUMBER MONTH
+    (23) date -> . MONTH NUMBER
+    (24) date -> . NUMBER MONTH YEAR
+    (25) date -> . MONTH NUMBER YEAR
+    (57) birth -> . BORN date place names
+    (58) birth -> . BORN date place SONOF names
+    (59) birth -> . BORN date place DAUGHTEROF names
+    (44) death -> . name deathPhrase DIED deathPredicate
+    (45) death -> . name DIED deathPredicate
+    (42) deathIntro -> . CAPITAL deathIntro
+    (43) deathIntro -> . TITLE
+    (69) spouse -> . HUSBAND name
+    (70) spouse -> . HUSBAND name date
+    (71) spouse -> . HUSBAND name NUMBER
+    (72) spouse -> . HUSBAND name MARRIED date
+    (73) spouse -> . HUSBAND name AND name
+    (74) spouse -> . WIFE name
+    (75) spouse -> . WIFE NUMBER name
+    (76) spouse -> . WIFE name MARRIED date place
+    (77) spouse -> . MARRIAGE name
+    (78) spouse -> . YEAR MARRIED name
+    (8) name -> . CAPITAL subname
+    (9) name -> . INITIAL subname
+    (10) name -> . CAPITAL subname SUFFIX
+    (11) name -> . TITLE name
+
+    $end            reduce using rule 2 (obituary -> sentence .)
+    CAPITAL         shift and go to state 18
+    TITLE           shift and go to state 2
+    WEEKDAY         shift and go to state 7
+    NUMBER          shift and go to state 4
+    MONTH           shift and go to state 24
+    BORN            shift and go to state 6
+    HUSBAND         shift and go to state 11
+    WIFE            shift and go to state 23
+    MARRIAGE        shift and go to state 12
+    YEAR            shift and go to state 3
+    INITIAL         shift and go to state 14
+
+    obituary                       shift and go to state 40
+    death                          shift and go to state 9
+    spouseSentence                 shift and go to state 21
+    referenceSentence              shift and go to state 15
+    reference                      shift and go to state 1
+    sentence                       shift and go to state 10
+    deathSentence                  shift and go to state 16
+    publicationDateSentence        shift and go to state 5
+    name                           shift and go to state 22
+    birthSentence                  shift and go to state 25
+    birth                          shift and go to state 17
+    date                           shift and go to state 19
+    spouse                         shift and go to state 20
+    deathIntro                     shift and go to state 13
+
+state 11
+
+    (69) spouse -> HUSBAND . name
+    (70) spouse -> HUSBAND . name date
+    (71) spouse -> HUSBAND . name NUMBER
+    (72) spouse -> HUSBAND . name MARRIED date
+    (73) spouse -> HUSBAND . name AND name
+    (8) name -> . CAPITAL subname
+    (9) name -> . INITIAL subname
+    (10) name -> . CAPITAL subname SUFFIX
+    (11) name -> . TITLE name
+
+    CAPITAL         shift and go to state 42
+    INITIAL         shift and go to state 14
+    TITLE           shift and go to state 32
+
+    name                           shift and go to state 41
+
+state 12
+
+    (77) spouse -> MARRIAGE . name
+    (8) name -> . CAPITAL subname
+    (9) name -> . INITIAL subname
+    (10) name -> . CAPITAL subname SUFFIX
+    (11) name -> . TITLE name
+
+    CAPITAL         shift and go to state 42
+    INITIAL         shift and go to state 14
+    TITLE           shift and go to state 32
+
+    name                           shift and go to state 43
+
+state 13
+
+    (41) deathSentence -> deathIntro . death
+    (44) death -> . name deathPhrase DIED deathPredicate
+    (45) death -> . name DIED deathPredicate
+    (8) name -> . CAPITAL subname
+    (9) name -> . INITIAL subname
+    (10) name -> . CAPITAL subname SUFFIX
+    (11) name -> . TITLE name
+
+    CAPITAL         shift and go to state 42
+    INITIAL         shift and go to state 14
+    TITLE           shift and go to state 32
+
+    death                          shift and go to state 44
+    name                           shift and go to state 22
+
+state 14
+
+    (9) name -> INITIAL . subname
+    (12) subname -> . CAPITAL
+    (13) subname -> . CAPITAL subname
+    (14) subname -> . nee subname
+    (15) subname -> . INITIAL subname
+    (16) nee -> . LPAREN CAPITAL RPAREN
+
+    CAPITAL         shift and go to state 49
+    INITIAL         shift and go to state 46
+    LPAREN          shift and go to state 48
+
+    nee                            shift and go to state 45
+    subname                        shift and go to state 47
+
+state 15
+
+    (3) sentence -> referenceSentence .
+
+    CAPITAL         reduce using rule 3 (sentence -> referenceSentence .)
+    TITLE           reduce using rule 3 (sentence -> referenceSentence .)
+    WEEKDAY         reduce using rule 3 (sentence -> referenceSentence .)
+    NUMBER          reduce using rule 3 (sentence -> referenceSentence .)
+    MONTH           reduce using rule 3 (sentence -> referenceSentence .)
+    BORN            reduce using rule 3 (sentence -> referenceSentence .)
+    HUSBAND         reduce using rule 3 (sentence -> referenceSentence .)
+    WIFE            reduce using rule 3 (sentence -> referenceSentence .)
+    MARRIAGE        reduce using rule 3 (sentence -> referenceSentence .)
+    YEAR            reduce using rule 3 (sentence -> referenceSentence .)
+    INITIAL         reduce using rule 3 (sentence -> referenceSentence .)
+    $end            reduce using rule 3 (sentence -> referenceSentence .)
+
+
+state 16
+
+    (6) sentence -> deathSentence .
+
+    CAPITAL         reduce using rule 6 (sentence -> deathSentence .)
+    TITLE           reduce using rule 6 (sentence -> deathSentence .)
+    WEEKDAY         reduce using rule 6 (sentence -> deathSentence .)
+    NUMBER          reduce using rule 6 (sentence -> deathSentence .)
+    MONTH           reduce using rule 6 (sentence -> deathSentence .)
+    BORN            reduce using rule 6 (sentence -> deathSentence .)
+    HUSBAND         reduce using rule 6 (sentence -> deathSentence .)
+    WIFE            reduce using rule 6 (sentence -> deathSentence .)
+    MARRIAGE        reduce using rule 6 (sentence -> deathSentence .)
+    YEAR            reduce using rule 6 (sentence -> deathSentence .)
+    INITIAL         reduce using rule 6 (sentence -> deathSentence .)
+    $end            reduce using rule 6 (sentence -> deathSentence .)
+
+
+state 17
+
+    (53) birthSentence -> birth . PERIOD
+    (54) birthSentence -> birth . NEWLINE
+    (56) birthSentence -> birth . SUFFIX
+
+    PERIOD          shift and go to state 51
+    NEWLINE         shift and go to state 50
+    SUFFIX          shift and go to state 52
+
+
+state 18
+
+    (55) birthSentence -> CAPITAL . birth PERIOD
+    (61) spouseSentence -> CAPITAL . spouse spouseSentenceEnd
+    (62) spouseSentence -> CAPITAL . CAPITAL spouse spouseSentenceEnd
+    (33) reference -> CAPITAL . PAPER
+    (34) reference -> CAPITAL . reference
+    (42) deathIntro -> CAPITAL . deathIntro
+    (8) name -> CAPITAL . subname
+    (10) name -> CAPITAL . subname SUFFIX
+    (57) birth -> . BORN date place names
+    (58) birth -> . BORN date place SONOF names
+    (59) birth -> . BORN date place DAUGHTEROF names
+    (69) spouse -> . HUSBAND name
+    (70) spouse -> . HUSBAND name date
+    (71) spouse -> . HUSBAND name NUMBER
+    (72) spouse -> . HUSBAND name MARRIED date
+    (73) spouse -> . HUSBAND name AND name
+    (74) spouse -> . WIFE name
+    (75) spouse -> . WIFE NUMBER name
+    (76) spouse -> . WIFE name MARRIED date place
+    (77) spouse -> . MARRIAGE name
+    (78) spouse -> . YEAR MARRIED name
+    (33) reference -> . CAPITAL PAPER
+    (34) reference -> . CAPITAL reference
+    (42) deathIntro -> . CAPITAL deathIntro
+    (43) deathIntro -> . TITLE
+    (12) subname -> . CAPITAL
+    (13) subname -> . CAPITAL subname
+    (14) subname -> . nee subname
+    (15) subname -> . INITIAL subname
+    (16) nee -> . LPAREN CAPITAL RPAREN
+
+    CAPITAL         shift and go to state 57
+    PAPER           shift and go to state 59
+    BORN            shift and go to state 6
+    HUSBAND         shift and go to state 11
+    WIFE            shift and go to state 23
+    MARRIAGE        shift and go to state 12
+    YEAR            shift and go to state 3
+    TITLE           shift and go to state 54
+    INITIAL         shift and go to state 46
+    LPAREN          shift and go to state 48
+
+    reference                      shift and go to state 53
+    nee                            shift and go to state 45
+    subname                        shift and go to state 60
+    birth                          shift and go to state 56
+    spouse                         shift and go to state 58
+    deathIntro                     shift and go to state 55
+
+state 19
+
+    (30) referenceSentence -> date . reference NEWLINE
+    (35) publicationDateSentence -> date . NEWLINE
+    (33) reference -> . CAPITAL PAPER
+    (34) reference -> . CAPITAL reference
+
+    NEWLINE         shift and go to state 61
+    CAPITAL         shift and go to state 63
+
+    reference                      shift and go to state 62
+
+state 20
+
+    (60) spouseSentence -> spouse . spouseSentenceEnd
+    (64) spouseSentenceEnd -> . CAPITAL spouseSentenceEnd
+    (65) spouseSentenceEnd -> . AND spouseSentenceEnd
+    (66) spouseSentenceEnd -> . HUSBAND spouseSentenceEnd
+    (67) spouseSentenceEnd -> . BORN spouseSentenceEnd
+    (68) spouseSentenceEnd -> . PERIOD
+
+    CAPITAL         shift and go to state 68
+    AND             shift and go to state 64
+    HUSBAND         shift and go to state 69
+    BORN            shift and go to state 67
+    PERIOD          shift and go to state 66
+
+    spouseSentenceEnd              shift and go to state 65
+
+state 21
+
+    (7) sentence -> spouseSentence .
+
+    CAPITAL         reduce using rule 7 (sentence -> spouseSentence .)
+    TITLE           reduce using rule 7 (sentence -> spouseSentence .)
+    WEEKDAY         reduce using rule 7 (sentence -> spouseSentence .)
+    NUMBER          reduce using rule 7 (sentence -> spouseSentence .)
+    MONTH           reduce using rule 7 (sentence -> spouseSentence .)
+    BORN            reduce using rule 7 (sentence -> spouseSentence .)
+    HUSBAND         reduce using rule 7 (sentence -> spouseSentence .)
+    WIFE            reduce using rule 7 (sentence -> spouseSentence .)
+    MARRIAGE        reduce using rule 7 (sentence -> spouseSentence .)
+    YEAR            reduce using rule 7 (sentence -> spouseSentence .)
+    INITIAL         reduce using rule 7 (sentence -> spouseSentence .)
+    $end            reduce using rule 7 (sentence -> spouseSentence .)
+
+
+state 22
+
+    (44) death -> name . deathPhrase DIED deathPredicate
+    (45) death -> name . DIED deathPredicate
+    (46) deathPhrase -> . NUMBER
+    (47) deathPhrase -> . NUMBER place
+    (48) deathPhrase -> . NUMBER NUMBER place
+
+    DIED            shift and go to state 72
+    NUMBER          shift and go to state 70
+
+    deathPhrase                    shift and go to state 71
+
+state 23
+
+    (74) spouse -> WIFE . name
+    (75) spouse -> WIFE . NUMBER name
+    (76) spouse -> WIFE . name MARRIED date place
+    (8) name -> . CAPITAL subname
+    (9) name -> . INITIAL subname
+    (10) name -> . CAPITAL subname SUFFIX
+    (11) name -> . TITLE name
+
+    NUMBER          shift and go to state 74
+    CAPITAL         shift and go to state 42
+    INITIAL         shift and go to state 14
+    TITLE           shift and go to state 32
+
+    name                           shift and go to state 73
+
+state 24
+
+    (23) date -> MONTH . NUMBER
+    (25) date -> MONTH . NUMBER YEAR
+
+    NUMBER          shift and go to state 75
+
+
+state 25
+
+    (5) sentence -> birthSentence .
+
+    CAPITAL         reduce using rule 5 (sentence -> birthSentence .)
+    TITLE           reduce using rule 5 (sentence -> birthSentence .)
+    WEEKDAY         reduce using rule 5 (sentence -> birthSentence .)
+    NUMBER          reduce using rule 5 (sentence -> birthSentence .)
+    MONTH           reduce using rule 5 (sentence -> birthSentence .)
+    BORN            reduce using rule 5 (sentence -> birthSentence .)
+    HUSBAND         reduce using rule 5 (sentence -> birthSentence .)
+    WIFE            reduce using rule 5 (sentence -> birthSentence .)
+    MARRIAGE        reduce using rule 5 (sentence -> birthSentence .)
+    YEAR            reduce using rule 5 (sentence -> birthSentence .)
+    INITIAL         reduce using rule 5 (sentence -> birthSentence .)
+    $end            reduce using rule 5 (sentence -> birthSentence .)
+
+
+state 26
+
+    (27) referenceSentence -> reference NEWLINE .
+
+    CAPITAL         reduce using rule 27 (referenceSentence -> reference NEWLINE .)
+    TITLE           reduce using rule 27 (referenceSentence -> reference NEWLINE .)
+    WEEKDAY         reduce using rule 27 (referenceSentence -> reference NEWLINE .)
+    NUMBER          reduce using rule 27 (referenceSentence -> reference NEWLINE .)
+    MONTH           reduce using rule 27 (referenceSentence -> reference NEWLINE .)
+    BORN            reduce using rule 27 (referenceSentence -> reference NEWLINE .)
+    HUSBAND         reduce using rule 27 (referenceSentence -> reference NEWLINE .)
+    WIFE            reduce using rule 27 (referenceSentence -> reference NEWLINE .)
+    MARRIAGE        reduce using rule 27 (referenceSentence -> reference NEWLINE .)
+    YEAR            reduce using rule 27 (referenceSentence -> reference NEWLINE .)
+    INITIAL         reduce using rule 27 (referenceSentence -> reference NEWLINE .)
+    $end            reduce using rule 27 (referenceSentence -> reference NEWLINE .)
+
+
+state 27
+
+    (26) referenceSentence -> reference PERIOD .
+
+    CAPITAL         reduce using rule 26 (referenceSentence -> reference PERIOD .)
+    TITLE           reduce using rule 26 (referenceSentence -> reference PERIOD .)
+    WEEKDAY         reduce using rule 26 (referenceSentence -> reference PERIOD .)
+    NUMBER          reduce using rule 26 (referenceSentence -> reference PERIOD .)
+    MONTH           reduce using rule 26 (referenceSentence -> reference PERIOD .)
+    BORN            reduce using rule 26 (referenceSentence -> reference PERIOD .)
+    HUSBAND         reduce using rule 26 (referenceSentence -> reference PERIOD .)
+    WIFE            reduce using rule 26 (referenceSentence -> reference PERIOD .)
+    MARRIAGE        reduce using rule 26 (referenceSentence -> reference PERIOD .)
+    YEAR            reduce using rule 26 (referenceSentence -> reference PERIOD .)
+    INITIAL         reduce using rule 26 (referenceSentence -> reference PERIOD .)
+    $end            reduce using rule 26 (referenceSentence -> reference PERIOD .)
+
+
+state 28
+
+    (32) miscellany -> CAPITAL . NUMBER NUMBER
+
+    NUMBER          shift and go to state 76
+
+
+state 29
+
+    (31) referenceSentence -> reference miscellany . date NEWLINE
+    (21) date -> . WEEKDAY date
+    (22) date -> . NUMBER MONTH
+    (23) date -> . MONTH NUMBER
+    (24) date -> . NUMBER MONTH YEAR
+    (25) date -> . MONTH NUMBER YEAR
+
+    WEEKDAY         shift and go to state 7
+    NUMBER          shift and go to state 4
+    MONTH           shift and go to state 24
+
+    date                           shift and go to state 77
+
+state 30
+
+    (28) referenceSentence -> reference date . PERIOD
+    (29) referenceSentence -> reference date . NEWLINE
+
+    PERIOD          shift and go to state 79
+    NEWLINE         shift and go to state 78
+
+
+state 31
+
+    (11) name -> TITLE name .
+
+    CAPITAL         reduce using rule 11 (name -> TITLE name .)
+    AND             reduce using rule 11 (name -> TITLE name .)
+    HUSBAND         reduce using rule 11 (name -> TITLE name .)
+    BORN            reduce using rule 11 (name -> TITLE name .)
+    PERIOD          reduce using rule 11 (name -> TITLE name .)
+    DIED            reduce using rule 11 (name -> TITLE name .)
+    NUMBER          reduce using rule 11 (name -> TITLE name .)
+    NEWLINE         reduce using rule 11 (name -> TITLE name .)
+    SUFFIX          reduce using rule 11 (name -> TITLE name .)
+    MARRIED         reduce using rule 11 (name -> TITLE name .)
+    WEEKDAY         reduce using rule 11 (name -> TITLE name .)
+    MONTH           reduce using rule 11 (name -> TITLE name .)
+
+
+state 32
+
+    (11) name -> TITLE . name
+    (8) name -> . CAPITAL subname
+    (9) name -> . INITIAL subname
+    (10) name -> . CAPITAL subname SUFFIX
+    (11) name -> . TITLE name
+
+    CAPITAL         shift and go to state 42
+    INITIAL         shift and go to state 14
+    TITLE           shift and go to state 32
+
+    name                           shift and go to state 31
+
+state 33
+
+    (63) spouseSentence -> TITLE CAPITAL . spouse spouseSentenceEnd
+    (8) name -> CAPITAL . subname
+    (10) name -> CAPITAL . subname SUFFIX
+    (69) spouse -> . HUSBAND name
+    (70) spouse -> . HUSBAND name date
+    (71) spouse -> . HUSBAND name NUMBER
+    (72) spouse -> . HUSBAND name MARRIED date
+    (73) spouse -> . HUSBAND name AND name
+    (74) spouse -> . WIFE name
+    (75) spouse -> . WIFE NUMBER name
+    (76) spouse -> . WIFE name MARRIED date place
+    (77) spouse -> . MARRIAGE name
+    (78) spouse -> . YEAR MARRIED name
+    (12) subname -> . CAPITAL
+    (13) subname -> . CAPITAL subname
+    (14) subname -> . nee subname
+    (15) subname -> . INITIAL subname
+    (16) nee -> . LPAREN CAPITAL RPAREN
+
+    HUSBAND         shift and go to state 11
+    WIFE            shift and go to state 23
+    MARRIAGE        shift and go to state 12
+    YEAR            shift and go to state 3
+    CAPITAL         shift and go to state 49
+    INITIAL         shift and go to state 46
+    LPAREN          shift and go to state 48
+
+    nee                            shift and go to state 45
+    subname                        shift and go to state 60
+    spouse                         shift and go to state 80
+
+state 34
+
+    (78) spouse -> YEAR MARRIED . name
+    (8) name -> . CAPITAL subname
+    (9) name -> . INITIAL subname
+    (10) name -> . CAPITAL subname SUFFIX
+    (11) name -> . TITLE name
+
+    CAPITAL         shift and go to state 42
+    INITIAL         shift and go to state 14
+    TITLE           shift and go to state 32
+
+    name                           shift and go to state 81
+
+state 35
+
+    (22) date -> NUMBER MONTH .
+    (24) date -> NUMBER MONTH . YEAR
+
+  ! shift/reduce conflict for YEAR resolved as shift
+    CAPITAL         reduce using rule 22 (date -> NUMBER MONTH .)
+    STATE           reduce using rule 22 (date -> NUMBER MONTH .)
+    PERIOD          reduce using rule 22 (date -> NUMBER MONTH .)
+    NEWLINE         reduce using rule 22 (date -> NUMBER MONTH .)
+    TITLE           reduce using rule 22 (date -> NUMBER MONTH .)
+    WEEKDAY         reduce using rule 22 (date -> NUMBER MONTH .)
+    NUMBER          reduce using rule 22 (date -> NUMBER MONTH .)
+    MONTH           reduce using rule 22 (date -> NUMBER MONTH .)
+    BORN            reduce using rule 22 (date -> NUMBER MONTH .)
+    HUSBAND         reduce using rule 22 (date -> NUMBER MONTH .)
+    WIFE            reduce using rule 22 (date -> NUMBER MONTH .)
+    MARRIAGE        reduce using rule 22 (date -> NUMBER MONTH .)
+    INITIAL         reduce using rule 22 (date -> NUMBER MONTH .)
+    $end            reduce using rule 22 (date -> NUMBER MONTH .)
+    AND             reduce using rule 22 (date -> NUMBER MONTH .)
+    YEAR            shift and go to state 82
+
+  ! YEAR            [ reduce using rule 22 (date -> NUMBER MONTH .) ]
+
+
+state 36
+
+    (57) birth -> BORN date . place names
+    (58) birth -> BORN date . place SONOF names
+    (59) birth -> BORN date . place DAUGHTEROF names
+    (36) place -> . CAPITAL place
+    (37) place -> . CAPITAL
+    (38) place -> . STATE
+
+    CAPITAL         shift and go to state 85
+    STATE           shift and go to state 83
+
+    place                          shift and go to state 84
+
+state 37
+
+    (21) date -> WEEKDAY date .
+
+    CAPITAL         reduce using rule 21 (date -> WEEKDAY date .)
+    STATE           reduce using rule 21 (date -> WEEKDAY date .)
+    PERIOD          reduce using rule 21 (date -> WEEKDAY date .)
+    NEWLINE         reduce using rule 21 (date -> WEEKDAY date .)
+    TITLE           reduce using rule 21 (date -> WEEKDAY date .)
+    WEEKDAY         reduce using rule 21 (date -> WEEKDAY date .)
+    NUMBER          reduce using rule 21 (date -> WEEKDAY date .)
+    MONTH           reduce using rule 21 (date -> WEEKDAY date .)
+    BORN            reduce using rule 21 (date -> WEEKDAY date .)
+    HUSBAND         reduce using rule 21 (date -> WEEKDAY date .)
+    WIFE            reduce using rule 21 (date -> WEEKDAY date .)
+    MARRIAGE        reduce using rule 21 (date -> WEEKDAY date .)
+    YEAR            reduce using rule 21 (date -> WEEKDAY date .)
+    INITIAL         reduce using rule 21 (date -> WEEKDAY date .)
+    $end            reduce using rule 21 (date -> WEEKDAY date .)
+    AND             reduce using rule 21 (date -> WEEKDAY date .)
+
+
+state 38
+
+    (40) deathSentence -> death NEWLINE .
+
+    CAPITAL         reduce using rule 40 (deathSentence -> death NEWLINE .)
+    TITLE           reduce using rule 40 (deathSentence -> death NEWLINE .)
+    WEEKDAY         reduce using rule 40 (deathSentence -> death NEWLINE .)
+    NUMBER          reduce using rule 40 (deathSentence -> death NEWLINE .)
+    MONTH           reduce using rule 40 (deathSentence -> death NEWLINE .)
+    BORN            reduce using rule 40 (deathSentence -> death NEWLINE .)
+    HUSBAND         reduce using rule 40 (deathSentence -> death NEWLINE .)
+    WIFE            reduce using rule 40 (deathSentence -> death NEWLINE .)
+    MARRIAGE        reduce using rule 40 (deathSentence -> death NEWLINE .)
+    YEAR            reduce using rule 40 (deathSentence -> death NEWLINE .)
+    INITIAL         reduce using rule 40 (deathSentence -> death NEWLINE .)
+    $end            reduce using rule 40 (deathSentence -> death NEWLINE .)
+
+
+state 39
+
+    (39) deathSentence -> death PERIOD .
+
+    CAPITAL         reduce using rule 39 (deathSentence -> death PERIOD .)
+    TITLE           reduce using rule 39 (deathSentence -> death PERIOD .)
+    WEEKDAY         reduce using rule 39 (deathSentence -> death PERIOD .)
+    NUMBER          reduce using rule 39 (deathSentence -> death PERIOD .)
+    MONTH           reduce using rule 39 (deathSentence -> death PERIOD .)
+    BORN            reduce using rule 39 (deathSentence -> death PERIOD .)
+    HUSBAND         reduce using rule 39 (deathSentence -> death PERIOD .)
+    WIFE            reduce using rule 39 (deathSentence -> death PERIOD .)
+    MARRIAGE        reduce using rule 39 (deathSentence -> death PERIOD .)
+    YEAR            reduce using rule 39 (deathSentence -> death PERIOD .)
+    INITIAL         reduce using rule 39 (deathSentence -> death PERIOD .)
+    $end            reduce using rule 39 (deathSentence -> death PERIOD .)
+
+
+state 40
+
+    (1) obituary -> sentence obituary .
+
+    $end            reduce using rule 1 (obituary -> sentence obituary .)
+
+
+state 41
+
+    (69) spouse -> HUSBAND name .
+    (70) spouse -> HUSBAND name . date
+    (71) spouse -> HUSBAND name . NUMBER
+    (72) spouse -> HUSBAND name . MARRIED date
+    (73) spouse -> HUSBAND name . AND name
+    (21) date -> . WEEKDAY date
+    (22) date -> . NUMBER MONTH
+    (23) date -> . MONTH NUMBER
+    (24) date -> . NUMBER MONTH YEAR
+    (25) date -> . MONTH NUMBER YEAR
+
+  ! shift/reduce conflict for AND resolved as shift
+    CAPITAL         reduce using rule 69 (spouse -> HUSBAND name .)
+    HUSBAND         reduce using rule 69 (spouse -> HUSBAND name .)
+    BORN            reduce using rule 69 (spouse -> HUSBAND name .)
+    PERIOD          reduce using rule 69 (spouse -> HUSBAND name .)
+    NUMBER          shift and go to state 88
+    MARRIED         shift and go to state 87
+    AND             shift and go to state 86
+    WEEKDAY         shift and go to state 7
+    MONTH           shift and go to state 24
+
+  ! AND             [ reduce using rule 69 (spouse -> HUSBAND name .) ]
+
+    date                           shift and go to state 89
+
+state 42
+
+    (8) name -> CAPITAL . subname
+    (10) name -> CAPITAL . subname SUFFIX
+    (12) subname -> . CAPITAL
+    (13) subname -> . CAPITAL subname
+    (14) subname -> . nee subname
+    (15) subname -> . INITIAL subname
+    (16) nee -> . LPAREN CAPITAL RPAREN
+
+    CAPITAL         shift and go to state 49
+    INITIAL         shift and go to state 46
+    LPAREN          shift and go to state 48
+
+    nee                            shift and go to state 45
+    subname                        shift and go to state 60
+
+state 43
+
+    (77) spouse -> MARRIAGE name .
+
+    CAPITAL         reduce using rule 77 (spouse -> MARRIAGE name .)
+    AND             reduce using rule 77 (spouse -> MARRIAGE name .)
+    HUSBAND         reduce using rule 77 (spouse -> MARRIAGE name .)
+    BORN            reduce using rule 77 (spouse -> MARRIAGE name .)
+    PERIOD          reduce using rule 77 (spouse -> MARRIAGE name .)
+
+
+state 44
+
+    (41) deathSentence -> deathIntro death .
+
+    CAPITAL         reduce using rule 41 (deathSentence -> deathIntro death .)
+    TITLE           reduce using rule 41 (deathSentence -> deathIntro death .)
+    WEEKDAY         reduce using rule 41 (deathSentence -> deathIntro death .)
+    NUMBER          reduce using rule 41 (deathSentence -> deathIntro death .)
+    MONTH           reduce using rule 41 (deathSentence -> deathIntro death .)
+    BORN            reduce using rule 41 (deathSentence -> deathIntro death .)
+    HUSBAND         reduce using rule 41 (deathSentence -> deathIntro death .)
+    WIFE            reduce using rule 41 (deathSentence -> deathIntro death .)
+    MARRIAGE        reduce using rule 41 (deathSentence -> deathIntro death .)
+    YEAR            reduce using rule 41 (deathSentence -> deathIntro death .)
+    INITIAL         reduce using rule 41 (deathSentence -> deathIntro death .)
+    $end            reduce using rule 41 (deathSentence -> deathIntro death .)
+
+
+state 45
+
+    (14) subname -> nee . subname
+    (12) subname -> . CAPITAL
+    (13) subname -> . CAPITAL subname
+    (14) subname -> . nee subname
+    (15) subname -> . INITIAL subname
+    (16) nee -> . LPAREN CAPITAL RPAREN
+
+    CAPITAL         shift and go to state 49
+    INITIAL         shift and go to state 46
+    LPAREN          shift and go to state 48
+
+    nee                            shift and go to state 45
+    subname                        shift and go to state 90
+
+state 46
+
+    (15) subname -> INITIAL . subname
+    (12) subname -> . CAPITAL
+    (13) subname -> . CAPITAL subname
+    (14) subname -> . nee subname
+    (15) subname -> . INITIAL subname
+    (16) nee -> . LPAREN CAPITAL RPAREN
+
+    CAPITAL         shift and go to state 49
+    INITIAL         shift and go to state 46
+    LPAREN          shift and go to state 48
+
+    nee                            shift and go to state 45
+    subname                        shift and go to state 91
+
+state 47
+
+    (9) name -> INITIAL subname .
+
+    CAPITAL         reduce using rule 9 (name -> INITIAL subname .)
+    AND             reduce using rule 9 (name -> INITIAL subname .)
+    HUSBAND         reduce using rule 9 (name -> INITIAL subname .)
+    BORN            reduce using rule 9 (name -> INITIAL subname .)
+    PERIOD          reduce using rule 9 (name -> INITIAL subname .)
+    DIED            reduce using rule 9 (name -> INITIAL subname .)
+    NUMBER          reduce using rule 9 (name -> INITIAL subname .)
+    NEWLINE         reduce using rule 9 (name -> INITIAL subname .)
+    SUFFIX          reduce using rule 9 (name -> INITIAL subname .)
+    MARRIED         reduce using rule 9 (name -> INITIAL subname .)
+    WEEKDAY         reduce using rule 9 (name -> INITIAL subname .)
+    MONTH           reduce using rule 9 (name -> INITIAL subname .)
+
+
+state 48
+
+    (16) nee -> LPAREN . CAPITAL RPAREN
+
+    CAPITAL         shift and go to state 92
+
+
+state 49
+
+    (12) subname -> CAPITAL .
+    (13) subname -> CAPITAL . subname
+    (12) subname -> . CAPITAL
+    (13) subname -> . CAPITAL subname
+    (14) subname -> . nee subname
+    (15) subname -> . INITIAL subname
+    (16) nee -> . LPAREN CAPITAL RPAREN
+
+  ! shift/reduce conflict for CAPITAL resolved as shift
+    SUFFIX          reduce using rule 12 (subname -> CAPITAL .)
+    DIED            reduce using rule 12 (subname -> CAPITAL .)
+    NUMBER          reduce using rule 12 (subname -> CAPITAL .)
+    MARRIED         reduce using rule 12 (subname -> CAPITAL .)
+    AND             reduce using rule 12 (subname -> CAPITAL .)
+    WEEKDAY         reduce using rule 12 (subname -> CAPITAL .)
+    MONTH           reduce using rule 12 (subname -> CAPITAL .)
+    HUSBAND         reduce using rule 12 (subname -> CAPITAL .)
+    BORN            reduce using rule 12 (subname -> CAPITAL .)
+    PERIOD          reduce using rule 12 (subname -> CAPITAL .)
+    NEWLINE         reduce using rule 12 (subname -> CAPITAL .)
+    CAPITAL         shift and go to state 49
+    INITIAL         shift and go to state 46
+    LPAREN          shift and go to state 48
+
+  ! CAPITAL         [ reduce using rule 12 (subname -> CAPITAL .) ]
+
+    nee                            shift and go to state 45
+    subname                        shift and go to state 93
+
+state 50
+
+    (54) birthSentence -> birth NEWLINE .
+
+    CAPITAL         reduce using rule 54 (birthSentence -> birth NEWLINE .)
+    TITLE           reduce using rule 54 (birthSentence -> birth NEWLINE .)
+    WEEKDAY         reduce using rule 54 (birthSentence -> birth NEWLINE .)
+    NUMBER          reduce using rule 54 (birthSentence -> birth NEWLINE .)
+    MONTH           reduce using rule 54 (birthSentence -> birth NEWLINE .)
+    BORN            reduce using rule 54 (birthSentence -> birth NEWLINE .)
+    HUSBAND         reduce using rule 54 (birthSentence -> birth NEWLINE .)
+    WIFE            reduce using rule 54 (birthSentence -> birth NEWLINE .)
+    MARRIAGE        reduce using rule 54 (birthSentence -> birth NEWLINE .)
+    YEAR            reduce using rule 54 (birthSentence -> birth NEWLINE .)
+    INITIAL         reduce using rule 54 (birthSentence -> birth NEWLINE .)
+    $end            reduce using rule 54 (birthSentence -> birth NEWLINE .)
+
+
+state 51
+
+    (53) birthSentence -> birth PERIOD .
+
+    CAPITAL         reduce using rule 53 (birthSentence -> birth PERIOD .)
+    TITLE           reduce using rule 53 (birthSentence -> birth PERIOD .)
+    WEEKDAY         reduce using rule 53 (birthSentence -> birth PERIOD .)
+    NUMBER          reduce using rule 53 (birthSentence -> birth PERIOD .)
+    MONTH           reduce using rule 53 (birthSentence -> birth PERIOD .)
+    BORN            reduce using rule 53 (birthSentence -> birth PERIOD .)
+    HUSBAND         reduce using rule 53 (birthSentence -> birth PERIOD .)
+    WIFE            reduce using rule 53 (birthSentence -> birth PERIOD .)
+    MARRIAGE        reduce using rule 53 (birthSentence -> birth PERIOD .)
+    YEAR            reduce using rule 53 (birthSentence -> birth PERIOD .)
+    INITIAL         reduce using rule 53 (birthSentence -> birth PERIOD .)
+    $end            reduce using rule 53 (birthSentence -> birth PERIOD .)
+
+
+state 52
+
+    (56) birthSentence -> birth SUFFIX .
+
+    CAPITAL         reduce using rule 56 (birthSentence -> birth SUFFIX .)
+    TITLE           reduce using rule 56 (birthSentence -> birth SUFFIX .)
+    WEEKDAY         reduce using rule 56 (birthSentence -> birth SUFFIX .)
+    NUMBER          reduce using rule 56 (birthSentence -> birth SUFFIX .)
+    MONTH           reduce using rule 56 (birthSentence -> birth SUFFIX .)
+    BORN            reduce using rule 56 (birthSentence -> birth SUFFIX .)
+    HUSBAND         reduce using rule 56 (birthSentence -> birth SUFFIX .)
+    WIFE            reduce using rule 56 (birthSentence -> birth SUFFIX .)
+    MARRIAGE        reduce using rule 56 (birthSentence -> birth SUFFIX .)
+    YEAR            reduce using rule 56 (birthSentence -> birth SUFFIX .)
+    INITIAL         reduce using rule 56 (birthSentence -> birth SUFFIX .)
+    $end            reduce using rule 56 (birthSentence -> birth SUFFIX .)
+
+
+state 53
+
+    (34) reference -> CAPITAL reference .
+
+    PERIOD          reduce using rule 34 (reference -> CAPITAL reference .)
+    NEWLINE         reduce using rule 34 (reference -> CAPITAL reference .)
+    WEEKDAY         reduce using rule 34 (reference -> CAPITAL reference .)
+    NUMBER          reduce using rule 34 (reference -> CAPITAL reference .)
+    MONTH           reduce using rule 34 (reference -> CAPITAL reference .)
+    CAPITAL         reduce using rule 34 (reference -> CAPITAL reference .)
+
+
+state 54
+
+    (43) deathIntro -> TITLE .
+
+    CAPITAL         reduce using rule 43 (deathIntro -> TITLE .)
+    INITIAL         reduce using rule 43 (deathIntro -> TITLE .)
+    TITLE           reduce using rule 43 (deathIntro -> TITLE .)
+
+
+state 55
+
+    (42) deathIntro -> CAPITAL deathIntro .
+
+    CAPITAL         reduce using rule 42 (deathIntro -> CAPITAL deathIntro .)
+    INITIAL         reduce using rule 42 (deathIntro -> CAPITAL deathIntro .)
+    TITLE           reduce using rule 42 (deathIntro -> CAPITAL deathIntro .)
+
+
+state 56
+
+    (55) birthSentence -> CAPITAL birth . PERIOD
+
+    PERIOD          shift and go to state 94
+
+
+state 57
+
+    (62) spouseSentence -> CAPITAL CAPITAL . spouse spouseSentenceEnd
+    (33) reference -> CAPITAL . PAPER
+    (34) reference -> CAPITAL . reference
+    (42) deathIntro -> CAPITAL . deathIntro
+    (12) subname -> CAPITAL .
+    (13) subname -> CAPITAL . subname
+    (69) spouse -> . HUSBAND name
+    (70) spouse -> . HUSBAND name date
+    (71) spouse -> . HUSBAND name NUMBER
+    (72) spouse -> . HUSBAND name MARRIED date
+    (73) spouse -> . HUSBAND name AND name
+    (74) spouse -> . WIFE name
+    (75) spouse -> . WIFE NUMBER name
+    (76) spouse -> . WIFE name MARRIED date place
+    (77) spouse -> . MARRIAGE name
+    (78) spouse -> . YEAR MARRIED name
+    (33) reference -> . CAPITAL PAPER
+    (34) reference -> . CAPITAL reference
+    (42) deathIntro -> . CAPITAL deathIntro
+    (43) deathIntro -> . TITLE
+    (12) subname -> . CAPITAL
+    (13) subname -> . CAPITAL subname
+    (14) subname -> . nee subname
+    (15) subname -> . INITIAL subname
+    (16) nee -> . LPAREN CAPITAL RPAREN
+
+    PAPER           shift and go to state 59
+    SUFFIX          reduce using rule 12 (subname -> CAPITAL .)
+    DIED            reduce using rule 12 (subname -> CAPITAL .)
+    NUMBER          reduce using rule 12 (subname -> CAPITAL .)
+    HUSBAND         shift and go to state 11
+    WIFE            shift and go to state 23
+    MARRIAGE        shift and go to state 12
+    YEAR            shift and go to state 3
+    CAPITAL         shift and go to state 95
+    TITLE           shift and go to state 54
+    INITIAL         shift and go to state 46
+    LPAREN          shift and go to state 48
+
+    reference                      shift and go to state 53
+    nee                            shift and go to state 45
+    subname                        shift and go to state 93
+    spouse                         shift and go to state 96
+    deathIntro                     shift and go to state 55
+
+state 58
+
+    (61) spouseSentence -> CAPITAL spouse . spouseSentenceEnd
+    (64) spouseSentenceEnd -> . CAPITAL spouseSentenceEnd
+    (65) spouseSentenceEnd -> . AND spouseSentenceEnd
+    (66) spouseSentenceEnd -> . HUSBAND spouseSentenceEnd
+    (67) spouseSentenceEnd -> . BORN spouseSentenceEnd
+    (68) spouseSentenceEnd -> . PERIOD
+
+    CAPITAL         shift and go to state 68
+    AND             shift and go to state 64
+    HUSBAND         shift and go to state 69
+    BORN            shift and go to state 67
+    PERIOD          shift and go to state 66
+
+    spouseSentenceEnd              shift and go to state 97
+
+state 59
+
+    (33) reference -> CAPITAL PAPER .
+
+    PERIOD          reduce using rule 33 (reference -> CAPITAL PAPER .)
+    NEWLINE         reduce using rule 33 (reference -> CAPITAL PAPER .)
+    WEEKDAY         reduce using rule 33 (reference -> CAPITAL PAPER .)
+    NUMBER          reduce using rule 33 (reference -> CAPITAL PAPER .)
+    MONTH           reduce using rule 33 (reference -> CAPITAL PAPER .)
+    CAPITAL         reduce using rule 33 (reference -> CAPITAL PAPER .)
+
+
+state 60
+
+    (8) name -> CAPITAL subname .
+    (10) name -> CAPITAL subname . SUFFIX
+
+  ! shift/reduce conflict for SUFFIX resolved as shift
+    CAPITAL         reduce using rule 8 (name -> CAPITAL subname .)
+    AND             reduce using rule 8 (name -> CAPITAL subname .)
+    HUSBAND         reduce using rule 8 (name -> CAPITAL subname .)
+    BORN            reduce using rule 8 (name -> CAPITAL subname .)
+    PERIOD          reduce using rule 8 (name -> CAPITAL subname .)
+    DIED            reduce using rule 8 (name -> CAPITAL subname .)
+    NUMBER          reduce using rule 8 (name -> CAPITAL subname .)
+    NEWLINE         reduce using rule 8 (name -> CAPITAL subname .)
+    MARRIED         reduce using rule 8 (name -> CAPITAL subname .)
+    WEEKDAY         reduce using rule 8 (name -> CAPITAL subname .)
+    MONTH           reduce using rule 8 (name -> CAPITAL subname .)
+    SUFFIX          shift and go to state 98
+
+  ! SUFFIX          [ reduce using rule 8 (name -> CAPITAL subname .) ]
+
+
+state 61
+
+    (35) publicationDateSentence -> date NEWLINE .
+
+    CAPITAL         reduce using rule 35 (publicationDateSentence -> date NEWLINE .)
+    TITLE           reduce using rule 35 (publicationDateSentence -> date NEWLINE .)
+    WEEKDAY         reduce using rule 35 (publicationDateSentence -> date NEWLINE .)
+    NUMBER          reduce using rule 35 (publicationDateSentence -> date NEWLINE .)
+    MONTH           reduce using rule 35 (publicationDateSentence -> date NEWLINE .)
+    BORN            reduce using rule 35 (publicationDateSentence -> date NEWLINE .)
+    HUSBAND         reduce using rule 35 (publicationDateSentence -> date NEWLINE .)
+    WIFE            reduce using rule 35 (publicationDateSentence -> date NEWLINE .)
+    MARRIAGE        reduce using rule 35 (publicationDateSentence -> date NEWLINE .)
+    YEAR            reduce using rule 35 (publicationDateSentence -> date NEWLINE .)
+    INITIAL         reduce using rule 35 (publicationDateSentence -> date NEWLINE .)
+    $end            reduce using rule 35 (publicationDateSentence -> date NEWLINE .)
+
+
+state 62
+
+    (30) referenceSentence -> date reference . NEWLINE
+
+    NEWLINE         shift and go to state 99
+
+
+state 63
+
+    (33) reference -> CAPITAL . PAPER
+    (34) reference -> CAPITAL . reference
+    (33) reference -> . CAPITAL PAPER
+    (34) reference -> . CAPITAL reference
+
+    PAPER           shift and go to state 59
+    CAPITAL         shift and go to state 63
+
+    reference                      shift and go to state 53
+
+state 64
+
+    (65) spouseSentenceEnd -> AND . spouseSentenceEnd
+    (64) spouseSentenceEnd -> . CAPITAL spouseSentenceEnd
+    (65) spouseSentenceEnd -> . AND spouseSentenceEnd
+    (66) spouseSentenceEnd -> . HUSBAND spouseSentenceEnd
+    (67) spouseSentenceEnd -> . BORN spouseSentenceEnd
+    (68) spouseSentenceEnd -> . PERIOD
+
+    CAPITAL         shift and go to state 68
+    AND             shift and go to state 64
+    HUSBAND         shift and go to state 69
+    BORN            shift and go to state 67
+    PERIOD          shift and go to state 66
+
+    spouseSentenceEnd              shift and go to state 100
+
+state 65
+
+    (60) spouseSentence -> spouse spouseSentenceEnd .
+
+    CAPITAL         reduce using rule 60 (spouseSentence -> spouse spouseSentenceEnd .)
+    TITLE           reduce using rule 60 (spouseSentence -> spouse spouseSentenceEnd .)
+    WEEKDAY         reduce using rule 60 (spouseSentence -> spouse spouseSentenceEnd .)
+    NUMBER          reduce using rule 60 (spouseSentence -> spouse spouseSentenceEnd .)
+    MONTH           reduce using rule 60 (spouseSentence -> spouse spouseSentenceEnd .)
+    BORN            reduce using rule 60 (spouseSentence -> spouse spouseSentenceEnd .)
+    HUSBAND         reduce using rule 60 (spouseSentence -> spouse spouseSentenceEnd .)
+    WIFE            reduce using rule 60 (spouseSentence -> spouse spouseSentenceEnd .)
+    MARRIAGE        reduce using rule 60 (spouseSentence -> spouse spouseSentenceEnd .)
+    YEAR            reduce using rule 60 (spouseSentence -> spouse spouseSentenceEnd .)
+    INITIAL         reduce using rule 60 (spouseSentence -> spouse spouseSentenceEnd .)
+    $end            reduce using rule 60 (spouseSentence -> spouse spouseSentenceEnd .)
+
+
+state 66
+
+    (68) spouseSentenceEnd -> PERIOD .
+
+    CAPITAL         reduce using rule 68 (spouseSentenceEnd -> PERIOD .)
+    TITLE           reduce using rule 68 (spouseSentenceEnd -> PERIOD .)
+    WEEKDAY         reduce using rule 68 (spouseSentenceEnd -> PERIOD .)
+    NUMBER          reduce using rule 68 (spouseSentenceEnd -> PERIOD .)
+    MONTH           reduce using rule 68 (spouseSentenceEnd -> PERIOD .)
+    BORN            reduce using rule 68 (spouseSentenceEnd -> PERIOD .)
+    HUSBAND         reduce using rule 68 (spouseSentenceEnd -> PERIOD .)
+    WIFE            reduce using rule 68 (spouseSentenceEnd -> PERIOD .)
+    MARRIAGE        reduce using rule 68 (spouseSentenceEnd -> PERIOD .)
+    YEAR            reduce using rule 68 (spouseSentenceEnd -> PERIOD .)
+    INITIAL         reduce using rule 68 (spouseSentenceEnd -> PERIOD .)
+    $end            reduce using rule 68 (spouseSentenceEnd -> PERIOD .)
+
+
+state 67
+
+    (67) spouseSentenceEnd -> BORN . spouseSentenceEnd
+    (64) spouseSentenceEnd -> . CAPITAL spouseSentenceEnd
+    (65) spouseSentenceEnd -> . AND spouseSentenceEnd
+    (66) spouseSentenceEnd -> . HUSBAND spouseSentenceEnd
+    (67) spouseSentenceEnd -> . BORN spouseSentenceEnd
+    (68) spouseSentenceEnd -> . PERIOD
+
+    CAPITAL         shift and go to state 68
+    AND             shift and go to state 64
+    HUSBAND         shift and go to state 69
+    BORN            shift and go to state 67
+    PERIOD          shift and go to state 66
+
+    spouseSentenceEnd              shift and go to state 101
+
+state 68
+
+    (64) spouseSentenceEnd -> CAPITAL . spouseSentenceEnd
+    (64) spouseSentenceEnd -> . CAPITAL spouseSentenceEnd
+    (65) spouseSentenceEnd -> . AND spouseSentenceEnd
+    (66) spouseSentenceEnd -> . HUSBAND spouseSentenceEnd
+    (67) spouseSentenceEnd -> . BORN spouseSentenceEnd
+    (68) spouseSentenceEnd -> . PERIOD
+
+    CAPITAL         shift and go to state 68
+    AND             shift and go to state 64
+    HUSBAND         shift and go to state 69
+    BORN            shift and go to state 67
+    PERIOD          shift and go to state 66
+
+    spouseSentenceEnd              shift and go to state 102
+
+state 69
+
+    (66) spouseSentenceEnd -> HUSBAND . spouseSentenceEnd
+    (64) spouseSentenceEnd -> . CAPITAL spouseSentenceEnd
+    (65) spouseSentenceEnd -> . AND spouseSentenceEnd
+    (66) spouseSentenceEnd -> . HUSBAND spouseSentenceEnd
+    (67) spouseSentenceEnd -> . BORN spouseSentenceEnd
+    (68) spouseSentenceEnd -> . PERIOD
+
+    CAPITAL         shift and go to state 68
+    AND             shift and go to state 64
+    HUSBAND         shift and go to state 69
+    BORN            shift and go to state 67
+    PERIOD          shift and go to state 66
+
+    spouseSentenceEnd              shift and go to state 103
+
+state 70
+
+    (46) deathPhrase -> NUMBER .
+    (47) deathPhrase -> NUMBER . place
+    (48) deathPhrase -> NUMBER . NUMBER place
+    (36) place -> . CAPITAL place
+    (37) place -> . CAPITAL
+    (38) place -> . STATE
+
+    DIED            reduce using rule 46 (deathPhrase -> NUMBER .)
+    NUMBER          shift and go to state 105
+    CAPITAL         shift and go to state 85
+    STATE           shift and go to state 83
+
+    place                          shift and go to state 104
+
+state 71
+
+    (44) death -> name deathPhrase . DIED deathPredicate
+
+    DIED            shift and go to state 106
+
+
+state 72
+
+    (45) death -> name DIED . deathPredicate
+    (49) deathPredicate -> . place WEEKDAY
+    (50) deathPredicate -> . date place
+    (51) deathPredicate -> . date
+    (52) deathPredicate -> . WEEKDAY place
+    (36) place -> . CAPITAL place
+    (37) place -> . CAPITAL
+    (38) place -> . STATE
+    (21) date -> . WEEKDAY date
+    (22) date -> . NUMBER MONTH
+    (23) date -> . MONTH NUMBER
+    (24) date -> . NUMBER MONTH YEAR
+    (25) date -> . MONTH NUMBER YEAR
+
+    WEEKDAY         shift and go to state 108
+    CAPITAL         shift and go to state 85
+    STATE           shift and go to state 83
+    NUMBER          shift and go to state 4
+    MONTH           shift and go to state 24
+
+    date                           shift and go to state 109
+    deathPredicate                 shift and go to state 110
+    place                          shift and go to state 107
+
+state 73
+
+    (74) spouse -> WIFE name .
+    (76) spouse -> WIFE name . MARRIED date place
+
+    CAPITAL         reduce using rule 74 (spouse -> WIFE name .)
+    AND             reduce using rule 74 (spouse -> WIFE name .)
+    HUSBAND         reduce using rule 74 (spouse -> WIFE name .)
+    BORN            reduce using rule 74 (spouse -> WIFE name .)
+    PERIOD          reduce using rule 74 (spouse -> WIFE name .)
+    MARRIED         shift and go to state 111
+
+
+state 74
+
+    (75) spouse -> WIFE NUMBER . name
+    (8) name -> . CAPITAL subname
+    (9) name -> . INITIAL subname
+    (10) name -> . CAPITAL subname SUFFIX
+    (11) name -> . TITLE name
+
+    CAPITAL         shift and go to state 42
+    INITIAL         shift and go to state 14
+    TITLE           shift and go to state 32
+
+    name                           shift and go to state 112
+
+state 75
+
+    (23) date -> MONTH NUMBER .
+    (25) date -> MONTH NUMBER . YEAR
+
+  ! shift/reduce conflict for YEAR resolved as shift
+    CAPITAL         reduce using rule 23 (date -> MONTH NUMBER .)
+    STATE           reduce using rule 23 (date -> MONTH NUMBER .)
+    PERIOD          reduce using rule 23 (date -> MONTH NUMBER .)
+    NEWLINE         reduce using rule 23 (date -> MONTH NUMBER .)
+    TITLE           reduce using rule 23 (date -> MONTH NUMBER .)
+    WEEKDAY         reduce using rule 23 (date -> MONTH NUMBER .)
+    NUMBER          reduce using rule 23 (date -> MONTH NUMBER .)
+    MONTH           reduce using rule 23 (date -> MONTH NUMBER .)
+    BORN            reduce using rule 23 (date -> MONTH NUMBER .)
+    HUSBAND         reduce using rule 23 (date -> MONTH NUMBER .)
+    WIFE            reduce using rule 23 (date -> MONTH NUMBER .)
+    MARRIAGE        reduce using rule 23 (date -> MONTH NUMBER .)
+    INITIAL         reduce using rule 23 (date -> MONTH NUMBER .)
+    $end            reduce using rule 23 (date -> MONTH NUMBER .)
+    AND             reduce using rule 23 (date -> MONTH NUMBER .)
+    YEAR            shift and go to state 113
+
+  ! YEAR            [ reduce using rule 23 (date -> MONTH NUMBER .) ]
+
+
+state 76
+
+    (32) miscellany -> CAPITAL NUMBER . NUMBER
+
+    NUMBER          shift and go to state 114
+
+
+state 77
+
+    (31) referenceSentence -> reference miscellany date . NEWLINE
+
+    NEWLINE         shift and go to state 115
+
+
+state 78
+
+    (29) referenceSentence -> reference date NEWLINE .
+
+    CAPITAL         reduce using rule 29 (referenceSentence -> reference date NEWLINE .)
+    TITLE           reduce using rule 29 (referenceSentence -> reference date NEWLINE .)
+    WEEKDAY         reduce using rule 29 (referenceSentence -> reference date NEWLINE .)
+    NUMBER          reduce using rule 29 (referenceSentence -> reference date NEWLINE .)
+    MONTH           reduce using rule 29 (referenceSentence -> reference date NEWLINE .)
+    BORN            reduce using rule 29 (referenceSentence -> reference date NEWLINE .)
+    HUSBAND         reduce using rule 29 (referenceSentence -> reference date NEWLINE .)
+    WIFE            reduce using rule 29 (referenceSentence -> reference date NEWLINE .)
+    MARRIAGE        reduce using rule 29 (referenceSentence -> reference date NEWLINE .)
+    YEAR            reduce using rule 29 (referenceSentence -> reference date NEWLINE .)
+    INITIAL         reduce using rule 29 (referenceSentence -> reference date NEWLINE .)
+    $end            reduce using rule 29 (referenceSentence -> reference date NEWLINE .)
+
+
+state 79
+
+    (28) referenceSentence -> reference date PERIOD .
+
+    CAPITAL         reduce using rule 28 (referenceSentence -> reference date PERIOD .)
+    TITLE           reduce using rule 28 (referenceSentence -> reference date PERIOD .)
+    WEEKDAY         reduce using rule 28 (referenceSentence -> reference date PERIOD .)
+    NUMBER          reduce using rule 28 (referenceSentence -> reference date PERIOD .)
+    MONTH           reduce using rule 28 (referenceSentence -> reference date PERIOD .)
+    BORN            reduce using rule 28 (referenceSentence -> reference date PERIOD .)
+    HUSBAND         reduce using rule 28 (referenceSentence -> reference date PERIOD .)
+    WIFE            reduce using rule 28 (referenceSentence -> reference date PERIOD .)
+    MARRIAGE        reduce using rule 28 (referenceSentence -> reference date PERIOD .)
+    YEAR            reduce using rule 28 (referenceSentence -> reference date PERIOD .)
+    INITIAL         reduce using rule 28 (referenceSentence -> reference date PERIOD .)
+    $end            reduce using rule 28 (referenceSentence -> reference date PERIOD .)
+
+
+state 80
+
+    (63) spouseSentence -> TITLE CAPITAL spouse . spouseSentenceEnd
+    (64) spouseSentenceEnd -> . CAPITAL spouseSentenceEnd
+    (65) spouseSentenceEnd -> . AND spouseSentenceEnd
+    (66) spouseSentenceEnd -> . HUSBAND spouseSentenceEnd
+    (67) spouseSentenceEnd -> . BORN spouseSentenceEnd
+    (68) spouseSentenceEnd -> . PERIOD
+
+    CAPITAL         shift and go to state 68
+    AND             shift and go to state 64
+    HUSBAND         shift and go to state 69
+    BORN            shift and go to state 67
+    PERIOD          shift and go to state 66
+
+    spouseSentenceEnd              shift and go to state 116
+
+state 81
+
+    (78) spouse -> YEAR MARRIED name .
+
+    CAPITAL         reduce using rule 78 (spouse -> YEAR MARRIED name .)
+    AND             reduce using rule 78 (spouse -> YEAR MARRIED name .)
+    HUSBAND         reduce using rule 78 (spouse -> YEAR MARRIED name .)
+    BORN            reduce using rule 78 (spouse -> YEAR MARRIED name .)
+    PERIOD          reduce using rule 78 (spouse -> YEAR MARRIED name .)
+
+
+state 82
+
+    (24) date -> NUMBER MONTH YEAR .
+
+    CAPITAL         reduce using rule 24 (date -> NUMBER MONTH YEAR .)
+    STATE           reduce using rule 24 (date -> NUMBER MONTH YEAR .)
+    PERIOD          reduce using rule 24 (date -> NUMBER MONTH YEAR .)
+    NEWLINE         reduce using rule 24 (date -> NUMBER MONTH YEAR .)
+    TITLE           reduce using rule 24 (date -> NUMBER MONTH YEAR .)
+    WEEKDAY         reduce using rule 24 (date -> NUMBER MONTH YEAR .)
+    NUMBER          reduce using rule 24 (date -> NUMBER MONTH YEAR .)
+    MONTH           reduce using rule 24 (date -> NUMBER MONTH YEAR .)
+    BORN            reduce using rule 24 (date -> NUMBER MONTH YEAR .)
+    HUSBAND         reduce using rule 24 (date -> NUMBER MONTH YEAR .)
+    WIFE            reduce using rule 24 (date -> NUMBER MONTH YEAR .)
+    MARRIAGE        reduce using rule 24 (date -> NUMBER MONTH YEAR .)
+    YEAR            reduce using rule 24 (date -> NUMBER MONTH YEAR .)
+    INITIAL         reduce using rule 24 (date -> NUMBER MONTH YEAR .)
+    $end            reduce using rule 24 (date -> NUMBER MONTH YEAR .)
+    AND             reduce using rule 24 (date -> NUMBER MONTH YEAR .)
+
+
+state 83
+
+    (38) place -> STATE .
+
+    WEEKDAY         reduce using rule 38 (place -> STATE .)
+    SONOF           reduce using rule 38 (place -> STATE .)
+    DAUGHTEROF      reduce using rule 38 (place -> STATE .)
+    CAPITAL         reduce using rule 38 (place -> STATE .)
+    INITIAL         reduce using rule 38 (place -> STATE .)
+    TITLE           reduce using rule 38 (place -> STATE .)
+    PERIOD          reduce using rule 38 (place -> STATE .)
+    NEWLINE         reduce using rule 38 (place -> STATE .)
+    NUMBER          reduce using rule 38 (place -> STATE .)
+    MONTH           reduce using rule 38 (place -> STATE .)
+    BORN            reduce using rule 38 (place -> STATE .)
+    HUSBAND         reduce using rule 38 (place -> STATE .)
+    WIFE            reduce using rule 38 (place -> STATE .)
+    MARRIAGE        reduce using rule 38 (place -> STATE .)
+    YEAR            reduce using rule 38 (place -> STATE .)
+    $end            reduce using rule 38 (place -> STATE .)
+    DIED            reduce using rule 38 (place -> STATE .)
+    AND             reduce using rule 38 (place -> STATE .)
+
+
+state 84
+
+    (57) birth -> BORN date place . names
+    (58) birth -> BORN date place . SONOF names
+    (59) birth -> BORN date place . DAUGHTEROF names
+    (17) names -> . name AND name
+    (18) names -> . CAPITAL AND name
+    (19) names -> . CAPITAL INITIAL AND name
+    (20) names -> . CAPITAL INITIAL SUFFIX AND name
+    (8) name -> . CAPITAL subname
+    (9) name -> . INITIAL subname
+    (10) name -> . CAPITAL subname SUFFIX
+    (11) name -> . TITLE name
+
+    SONOF           shift and go to state 117
+    DAUGHTEROF      shift and go to state 119
+    CAPITAL         shift and go to state 121
+    INITIAL         shift and go to state 14
+    TITLE           shift and go to state 32
+
+    names                          shift and go to state 120
+    name                           shift and go to state 118
+
+state 85
+
+    (36) place -> CAPITAL . place
+    (37) place -> CAPITAL .
+    (36) place -> . CAPITAL place
+    (37) place -> . CAPITAL
+    (38) place -> . STATE
+
+  ! shift/reduce conflict for CAPITAL resolved as shift
+    WEEKDAY         reduce using rule 37 (place -> CAPITAL .)
+    SONOF           reduce using rule 37 (place -> CAPITAL .)
+    DAUGHTEROF      reduce using rule 37 (place -> CAPITAL .)
+    INITIAL         reduce using rule 37 (place -> CAPITAL .)
+    TITLE           reduce using rule 37 (place -> CAPITAL .)
+    PERIOD          reduce using rule 37 (place -> CAPITAL .)
+    NEWLINE         reduce using rule 37 (place -> CAPITAL .)
+    NUMBER          reduce using rule 37 (place -> CAPITAL .)
+    MONTH           reduce using rule 37 (place -> CAPITAL .)
+    BORN            reduce using rule 37 (place -> CAPITAL .)
+    HUSBAND         reduce using rule 37 (place -> CAPITAL .)
+    WIFE            reduce using rule 37 (place -> CAPITAL .)
+    MARRIAGE        reduce using rule 37 (place -> CAPITAL .)
+    YEAR            reduce using rule 37 (place -> CAPITAL .)
+    $end            reduce using rule 37 (place -> CAPITAL .)
+    DIED            reduce using rule 37 (place -> CAPITAL .)
+    AND             reduce using rule 37 (place -> CAPITAL .)
+    CAPITAL         shift and go to state 85
+    STATE           shift and go to state 83
+
+  ! CAPITAL         [ reduce using rule 37 (place -> CAPITAL .) ]
+
+    place                          shift and go to state 122
+
+state 86
+
+    (73) spouse -> HUSBAND name AND . name
+    (8) name -> . CAPITAL subname
+    (9) name -> . INITIAL subname
+    (10) name -> . CAPITAL subname SUFFIX
+    (11) name -> . TITLE name
+
+    CAPITAL         shift and go to state 42
+    INITIAL         shift and go to state 14
+    TITLE           shift and go to state 32
+
+    name                           shift and go to state 123
+
+state 87
+
+    (72) spouse -> HUSBAND name MARRIED . date
+    (21) date -> . WEEKDAY date
+    (22) date -> . NUMBER MONTH
+    (23) date -> . MONTH NUMBER
+    (24) date -> . NUMBER MONTH YEAR
+    (25) date -> . MONTH NUMBER YEAR
+
+    WEEKDAY         shift and go to state 7
+    NUMBER          shift and go to state 4
+    MONTH           shift and go to state 24
+
+    date                           shift and go to state 124
+
+state 88
+
+    (71) spouse -> HUSBAND name NUMBER .
+    (22) date -> NUMBER . MONTH
+    (24) date -> NUMBER . MONTH YEAR
+
+    CAPITAL         reduce using rule 71 (spouse -> HUSBAND name NUMBER .)
+    AND             reduce using rule 71 (spouse -> HUSBAND name NUMBER .)
+    HUSBAND         reduce using rule 71 (spouse -> HUSBAND name NUMBER .)
+    BORN            reduce using rule 71 (spouse -> HUSBAND name NUMBER .)
+    PERIOD          reduce using rule 71 (spouse -> HUSBAND name NUMBER .)
+    MONTH           shift and go to state 35
+
+
+state 89
+
+    (70) spouse -> HUSBAND name date .
+
+    CAPITAL         reduce using rule 70 (spouse -> HUSBAND name date .)
+    AND             reduce using rule 70 (spouse -> HUSBAND name date .)
+    HUSBAND         reduce using rule 70 (spouse -> HUSBAND name date .)
+    BORN            reduce using rule 70 (spouse -> HUSBAND name date .)
+    PERIOD          reduce using rule 70 (spouse -> HUSBAND name date .)
+
+
+state 90
+
+    (14) subname -> nee subname .
+
+    SUFFIX          reduce using rule 14 (subname -> nee subname .)
+    DIED            reduce using rule 14 (subname -> nee subname .)
+    NUMBER          reduce using rule 14 (subname -> nee subname .)
+    MARRIED         reduce using rule 14 (subname -> nee subname .)
+    AND             reduce using rule 14 (subname -> nee subname .)
+    WEEKDAY         reduce using rule 14 (subname -> nee subname .)
+    MONTH           reduce using rule 14 (subname -> nee subname .)
+    CAPITAL         reduce using rule 14 (subname -> nee subname .)
+    HUSBAND         reduce using rule 14 (subname -> nee subname .)
+    BORN            reduce using rule 14 (subname -> nee subname .)
+    PERIOD          reduce using rule 14 (subname -> nee subname .)
+    NEWLINE         reduce using rule 14 (subname -> nee subname .)
+
+
+state 91
+
+    (15) subname -> INITIAL subname .
+
+    SUFFIX          reduce using rule 15 (subname -> INITIAL subname .)
+    DIED            reduce using rule 15 (subname -> INITIAL subname .)
+    NUMBER          reduce using rule 15 (subname -> INITIAL subname .)
+    MARRIED         reduce using rule 15 (subname -> INITIAL subname .)
+    AND             reduce using rule 15 (subname -> INITIAL subname .)
+    WEEKDAY         reduce using rule 15 (subname -> INITIAL subname .)
+    MONTH           reduce using rule 15 (subname -> INITIAL subname .)
+    CAPITAL         reduce using rule 15 (subname -> INITIAL subname .)
+    HUSBAND         reduce using rule 15 (subname -> INITIAL subname .)
+    BORN            reduce using rule 15 (subname -> INITIAL subname .)
+    PERIOD          reduce using rule 15 (subname -> INITIAL subname .)
+    NEWLINE         reduce using rule 15 (subname -> INITIAL subname .)
+
+
+state 92
+
+    (16) nee -> LPAREN CAPITAL . RPAREN
+
+    RPAREN          shift and go to state 125
+
+
+state 93
+
+    (13) subname -> CAPITAL subname .
+
+    SUFFIX          reduce using rule 13 (subname -> CAPITAL subname .)
+    DIED            reduce using rule 13 (subname -> CAPITAL subname .)
+    NUMBER          reduce using rule 13 (subname -> CAPITAL subname .)
+    MARRIED         reduce using rule 13 (subname -> CAPITAL subname .)
+    AND             reduce using rule 13 (subname -> CAPITAL subname .)
+    WEEKDAY         reduce using rule 13 (subname -> CAPITAL subname .)
+    MONTH           reduce using rule 13 (subname -> CAPITAL subname .)
+    CAPITAL         reduce using rule 13 (subname -> CAPITAL subname .)
+    HUSBAND         reduce using rule 13 (subname -> CAPITAL subname .)
+    BORN            reduce using rule 13 (subname -> CAPITAL subname .)
+    PERIOD          reduce using rule 13 (subname -> CAPITAL subname .)
+    NEWLINE         reduce using rule 13 (subname -> CAPITAL subname .)
+
+
+state 94
+
+    (55) birthSentence -> CAPITAL birth PERIOD .
+
+    CAPITAL         reduce using rule 55 (birthSentence -> CAPITAL birth PERIOD .)
+    TITLE           reduce using rule 55 (birthSentence -> CAPITAL birth PERIOD .)
+    WEEKDAY         reduce using rule 55 (birthSentence -> CAPITAL birth PERIOD .)
+    NUMBER          reduce using rule 55 (birthSentence -> CAPITAL birth PERIOD .)
+    MONTH           reduce using rule 55 (birthSentence -> CAPITAL birth PERIOD .)
+    BORN            reduce using rule 55 (birthSentence -> CAPITAL birth PERIOD .)
+    HUSBAND         reduce using rule 55 (birthSentence -> CAPITAL birth PERIOD .)
+    WIFE            reduce using rule 55 (birthSentence -> CAPITAL birth PERIOD .)
+    MARRIAGE        reduce using rule 55 (birthSentence -> CAPITAL birth PERIOD .)
+    YEAR            reduce using rule 55 (birthSentence -> CAPITAL birth PERIOD .)
+    INITIAL         reduce using rule 55 (birthSentence -> CAPITAL birth PERIOD .)
+    $end            reduce using rule 55 (birthSentence -> CAPITAL birth PERIOD .)
+
+
+state 95
+
+    (33) reference -> CAPITAL . PAPER
+    (34) reference -> CAPITAL . reference
+    (42) deathIntro -> CAPITAL . deathIntro
+    (12) subname -> CAPITAL .
+    (13) subname -> CAPITAL . subname
+    (33) reference -> . CAPITAL PAPER
+    (34) reference -> . CAPITAL reference
+    (42) deathIntro -> . CAPITAL deathIntro
+    (43) deathIntro -> . TITLE
+    (12) subname -> . CAPITAL
+    (13) subname -> . CAPITAL subname
+    (14) subname -> . nee subname
+    (15) subname -> . INITIAL subname
+    (16) nee -> . LPAREN CAPITAL RPAREN
+
+    PAPER           shift and go to state 59
+    SUFFIX          reduce using rule 12 (subname -> CAPITAL .)
+    DIED            reduce using rule 12 (subname -> CAPITAL .)
+    NUMBER          reduce using rule 12 (subname -> CAPITAL .)
+    CAPITAL         shift and go to state 95
+    TITLE           shift and go to state 54
+    INITIAL         shift and go to state 46
+    LPAREN          shift and go to state 48
+
+    nee                            shift and go to state 45
+    subname                        shift and go to state 93
+    deathIntro                     shift and go to state 55
+    reference                      shift and go to state 53
+
+state 96
+
+    (62) spouseSentence -> CAPITAL CAPITAL spouse . spouseSentenceEnd
+    (64) spouseSentenceEnd -> . CAPITAL spouseSentenceEnd
+    (65) spouseSentenceEnd -> . AND spouseSentenceEnd
+    (66) spouseSentenceEnd -> . HUSBAND spouseSentenceEnd
+    (67) spouseSentenceEnd -> . BORN spouseSentenceEnd
+    (68) spouseSentenceEnd -> . PERIOD
+
+    CAPITAL         shift and go to state 68
+    AND             shift and go to state 64
+    HUSBAND         shift and go to state 69
+    BORN            shift and go to state 67
+    PERIOD          shift and go to state 66
+
+    spouseSentenceEnd              shift and go to state 126
+
+state 97
+
+    (61) spouseSentence -> CAPITAL spouse spouseSentenceEnd .
+
+    CAPITAL         reduce using rule 61 (spouseSentence -> CAPITAL spouse spouseSentenceEnd .)
+    TITLE           reduce using rule 61 (spouseSentence -> CAPITAL spouse spouseSentenceEnd .)
+    WEEKDAY         reduce using rule 61 (spouseSentence -> CAPITAL spouse spouseSentenceEnd .)
+    NUMBER          reduce using rule 61 (spouseSentence -> CAPITAL spouse spouseSentenceEnd .)
+    MONTH           reduce using rule 61 (spouseSentence -> CAPITAL spouse spouseSentenceEnd .)
+    BORN            reduce using rule 61 (spouseSentence -> CAPITAL spouse spouseSentenceEnd .)
+    HUSBAND         reduce using rule 61 (spouseSentence -> CAPITAL spouse spouseSentenceEnd .)
+    WIFE            reduce using rule 61 (spouseSentence -> CAPITAL spouse spouseSentenceEnd .)
+    MARRIAGE        reduce using rule 61 (spouseSentence -> CAPITAL spouse spouseSentenceEnd .)
+    YEAR            reduce using rule 61 (spouseSentence -> CAPITAL spouse spouseSentenceEnd .)
+    INITIAL         reduce using rule 61 (spouseSentence -> CAPITAL spouse spouseSentenceEnd .)
+    $end            reduce using rule 61 (spouseSentence -> CAPITAL spouse spouseSentenceEnd .)
+
+
+state 98
+
+    (10) name -> CAPITAL subname SUFFIX .
+
+    CAPITAL         reduce using rule 10 (name -> CAPITAL subname SUFFIX .)
+    AND             reduce using rule 10 (name -> CAPITAL subname SUFFIX .)
+    HUSBAND         reduce using rule 10 (name -> CAPITAL subname SUFFIX .)
+    BORN            reduce using rule 10 (name -> CAPITAL subname SUFFIX .)
+    PERIOD          reduce using rule 10 (name -> CAPITAL subname SUFFIX .)
+    DIED            reduce using rule 10 (name -> CAPITAL subname SUFFIX .)
+    NUMBER          reduce using rule 10 (name -> CAPITAL subname SUFFIX .)
+    NEWLINE         reduce using rule 10 (name -> CAPITAL subname SUFFIX .)
+    SUFFIX          reduce using rule 10 (name -> CAPITAL subname SUFFIX .)
+    MARRIED         reduce using rule 10 (name -> CAPITAL subname SUFFIX .)
+    WEEKDAY         reduce using rule 10 (name -> CAPITAL subname SUFFIX .)
+    MONTH           reduce using rule 10 (name -> CAPITAL subname SUFFIX .)
+
+
+state 99
+
+    (30) referenceSentence -> date reference NEWLINE .
+
+    CAPITAL         reduce using rule 30 (referenceSentence -> date reference NEWLINE .)
+    TITLE           reduce using rule 30 (referenceSentence -> date reference NEWLINE .)
+    WEEKDAY         reduce using rule 30 (referenceSentence -> date reference NEWLINE .)
+    NUMBER          reduce using rule 30 (referenceSentence -> date reference NEWLINE .)
+    MONTH           reduce using rule 30 (referenceSentence -> date reference NEWLINE .)
+    BORN            reduce using rule 30 (referenceSentence -> date reference NEWLINE .)
+    HUSBAND         reduce using rule 30 (referenceSentence -> date reference NEWLINE .)
+    WIFE            reduce using rule 30 (referenceSentence -> date reference NEWLINE .)
+    MARRIAGE        reduce using rule 30 (referenceSentence -> date reference NEWLINE .)
+    YEAR            reduce using rule 30 (referenceSentence -> date reference NEWLINE .)
+    INITIAL         reduce using rule 30 (referenceSentence -> date reference NEWLINE .)
+    $end            reduce using rule 30 (referenceSentence -> date reference NEWLINE .)
+
+
+state 100
+
+    (65) spouseSentenceEnd -> AND spouseSentenceEnd .
+
+    CAPITAL         reduce using rule 65 (spouseSentenceEnd -> AND spouseSentenceEnd .)
+    TITLE           reduce using rule 65 (spouseSentenceEnd -> AND spouseSentenceEnd .)
+    WEEKDAY         reduce using rule 65 (spouseSentenceEnd -> AND spouseSentenceEnd .)
+    NUMBER          reduce using rule 65 (spouseSentenceEnd -> AND spouseSentenceEnd .)
+    MONTH           reduce using rule 65 (spouseSentenceEnd -> AND spouseSentenceEnd .)
+    BORN            reduce using rule 65 (spouseSentenceEnd -> AND spouseSentenceEnd .)
+    HUSBAND         reduce using rule 65 (spouseSentenceEnd -> AND spouseSentenceEnd .)
+    WIFE            reduce using rule 65 (spouseSentenceEnd -> AND spouseSentenceEnd .)
+    MARRIAGE        reduce using rule 65 (spouseSentenceEnd -> AND spouseSentenceEnd .)
+    YEAR            reduce using rule 65 (spouseSentenceEnd -> AND spouseSentenceEnd .)
+    INITIAL         reduce using rule 65 (spouseSentenceEnd -> AND spouseSentenceEnd .)
+    $end            reduce using rule 65 (spouseSentenceEnd -> AND spouseSentenceEnd .)
+
+
+state 101
+
+    (67) spouseSentenceEnd -> BORN spouseSentenceEnd .
+
+    CAPITAL         reduce using rule 67 (spouseSentenceEnd -> BORN spouseSentenceEnd .)
+    TITLE           reduce using rule 67 (spouseSentenceEnd -> BORN spouseSentenceEnd .)
+    WEEKDAY         reduce using rule 67 (spouseSentenceEnd -> BORN spouseSentenceEnd .)
+    NUMBER          reduce using rule 67 (spouseSentenceEnd -> BORN spouseSentenceEnd .)
+    MONTH           reduce using rule 67 (spouseSentenceEnd -> BORN spouseSentenceEnd .)
+    BORN            reduce using rule 67 (spouseSentenceEnd -> BORN spouseSentenceEnd .)
+    HUSBAND         reduce using rule 67 (spouseSentenceEnd -> BORN spouseSentenceEnd .)
+    WIFE            reduce using rule 67 (spouseSentenceEnd -> BORN spouseSentenceEnd .)
+    MARRIAGE        reduce using rule 67 (spouseSentenceEnd -> BORN spouseSentenceEnd .)
+    YEAR            reduce using rule 67 (spouseSentenceEnd -> BORN spouseSentenceEnd .)
+    INITIAL         reduce using rule 67 (spouseSentenceEnd -> BORN spouseSentenceEnd .)
+    $end            reduce using rule 67 (spouseSentenceEnd -> BORN spouseSentenceEnd .)
+
+
+state 102
+
+    (64) spouseSentenceEnd -> CAPITAL spouseSentenceEnd .
+
+    CAPITAL         reduce using rule 64 (spouseSentenceEnd -> CAPITAL spouseSentenceEnd .)
+    TITLE           reduce using rule 64 (spouseSentenceEnd -> CAPITAL spouseSentenceEnd .)
+    WEEKDAY         reduce using rule 64 (spouseSentenceEnd -> CAPITAL spouseSentenceEnd .)
+    NUMBER          reduce using rule 64 (spouseSentenceEnd -> CAPITAL spouseSentenceEnd .)
+    MONTH           reduce using rule 64 (spouseSentenceEnd -> CAPITAL spouseSentenceEnd .)
+    BORN            reduce using rule 64 (spouseSentenceEnd -> CAPITAL spouseSentenceEnd .)
+    HUSBAND         reduce using rule 64 (spouseSentenceEnd -> CAPITAL spouseSentenceEnd .)
+    WIFE            reduce using rule 64 (spouseSentenceEnd -> CAPITAL spouseSentenceEnd .)
+    MARRIAGE        reduce using rule 64 (spouseSentenceEnd -> CAPITAL spouseSentenceEnd .)
+    YEAR            reduce using rule 64 (spouseSentenceEnd -> CAPITAL spouseSentenceEnd .)
+    INITIAL         reduce using rule 64 (spouseSentenceEnd -> CAPITAL spouseSentenceEnd .)
+    $end            reduce using rule 64 (spouseSentenceEnd -> CAPITAL spouseSentenceEnd .)
+
+
+state 103
+
+    (66) spouseSentenceEnd -> HUSBAND spouseSentenceEnd .
+
+    CAPITAL         reduce using rule 66 (spouseSentenceEnd -> HUSBAND spouseSentenceEnd .)
+    TITLE           reduce using rule 66 (spouseSentenceEnd -> HUSBAND spouseSentenceEnd .)
+    WEEKDAY         reduce using rule 66 (spouseSentenceEnd -> HUSBAND spouseSentenceEnd .)
+    NUMBER          reduce using rule 66 (spouseSentenceEnd -> HUSBAND spouseSentenceEnd .)
+    MONTH           reduce using rule 66 (spouseSentenceEnd -> HUSBAND spouseSentenceEnd .)
+    BORN            reduce using rule 66 (spouseSentenceEnd -> HUSBAND spouseSentenceEnd .)
+    HUSBAND         reduce using rule 66 (spouseSentenceEnd -> HUSBAND spouseSentenceEnd .)
+    WIFE            reduce using rule 66 (spouseSentenceEnd -> HUSBAND spouseSentenceEnd .)
+    MARRIAGE        reduce using rule 66 (spouseSentenceEnd -> HUSBAND spouseSentenceEnd .)
+    YEAR            reduce using rule 66 (spouseSentenceEnd -> HUSBAND spouseSentenceEnd .)
+    INITIAL         reduce using rule 66 (spouseSentenceEnd -> HUSBAND spouseSentenceEnd .)
+    $end            reduce using rule 66 (spouseSentenceEnd -> HUSBAND spouseSentenceEnd .)
+
+
+state 104
+
+    (47) deathPhrase -> NUMBER place .
+
+    DIED            reduce using rule 47 (deathPhrase -> NUMBER place .)
+
+
+state 105
+
+    (48) deathPhrase -> NUMBER NUMBER . place
+    (36) place -> . CAPITAL place
+    (37) place -> . CAPITAL
+    (38) place -> . STATE
+
+    CAPITAL         shift and go to state 85
+    STATE           shift and go to state 83
+
+    place                          shift and go to state 127
+
+state 106
+
+    (44) death -> name deathPhrase DIED . deathPredicate
+    (49) deathPredicate -> . place WEEKDAY
+    (50) deathPredicate -> . date place
+    (51) deathPredicate -> . date
+    (52) deathPredicate -> . WEEKDAY place
+    (36) place -> . CAPITAL place
+    (37) place -> . CAPITAL
+    (38) place -> . STATE
+    (21) date -> . WEEKDAY date
+    (22) date -> . NUMBER MONTH
+    (23) date -> . MONTH NUMBER
+    (24) date -> . NUMBER MONTH YEAR
+    (25) date -> . MONTH NUMBER YEAR
+
+    WEEKDAY         shift and go to state 108
+    CAPITAL         shift and go to state 85
+    STATE           shift and go to state 83
+    NUMBER          shift and go to state 4
+    MONTH           shift and go to state 24
+
+    date                           shift and go to state 109
+    deathPredicate                 shift and go to state 128
+    place                          shift and go to state 107
+
+state 107
+
+    (49) deathPredicate -> place . WEEKDAY
+
+    WEEKDAY         shift and go to state 129
+
+
+state 108
+
+    (52) deathPredicate -> WEEKDAY . place
+    (21) date -> WEEKDAY . date
+    (36) place -> . CAPITAL place
+    (37) place -> . CAPITAL
+    (38) place -> . STATE
+    (21) date -> . WEEKDAY date
+    (22) date -> . NUMBER MONTH
+    (23) date -> . MONTH NUMBER
+    (24) date -> . NUMBER MONTH YEAR
+    (25) date -> . MONTH NUMBER YEAR
+
+    CAPITAL         shift and go to state 85
+    STATE           shift and go to state 83
+    WEEKDAY         shift and go to state 7
+    NUMBER          shift and go to state 4
+    MONTH           shift and go to state 24
+
+    date                           shift and go to state 37
+    place                          shift and go to state 130
+
+state 109
+
+    (50) deathPredicate -> date . place
+    (51) deathPredicate -> date .
+    (36) place -> . CAPITAL place
+    (37) place -> . CAPITAL
+    (38) place -> . STATE
+
+  ! shift/reduce conflict for CAPITAL resolved as shift
+    PERIOD          reduce using rule 51 (deathPredicate -> date .)
+    NEWLINE         reduce using rule 51 (deathPredicate -> date .)
+    TITLE           reduce using rule 51 (deathPredicate -> date .)
+    WEEKDAY         reduce using rule 51 (deathPredicate -> date .)
+    NUMBER          reduce using rule 51 (deathPredicate -> date .)
+    MONTH           reduce using rule 51 (deathPredicate -> date .)
+    BORN            reduce using rule 51 (deathPredicate -> date .)
+    HUSBAND         reduce using rule 51 (deathPredicate -> date .)
+    WIFE            reduce using rule 51 (deathPredicate -> date .)
+    MARRIAGE        reduce using rule 51 (deathPredicate -> date .)
+    YEAR            reduce using rule 51 (deathPredicate -> date .)
+    INITIAL         reduce using rule 51 (deathPredicate -> date .)
+    $end            reduce using rule 51 (deathPredicate -> date .)
+    CAPITAL         shift and go to state 85
+    STATE           shift and go to state 83
+
+  ! CAPITAL         [ reduce using rule 51 (deathPredicate -> date .) ]
+
+    place                          shift and go to state 131
+
+state 110
+
+    (45) death -> name DIED deathPredicate .
+
+    PERIOD          reduce using rule 45 (death -> name DIED deathPredicate .)
+    NEWLINE         reduce using rule 45 (death -> name DIED deathPredicate .)
+    CAPITAL         reduce using rule 45 (death -> name DIED deathPredicate .)
+    TITLE           reduce using rule 45 (death -> name DIED deathPredicate .)
+    WEEKDAY         reduce using rule 45 (death -> name DIED deathPredicate .)
+    NUMBER          reduce using rule 45 (death -> name DIED deathPredicate .)
+    MONTH           reduce using rule 45 (death -> name DIED deathPredicate .)
+    BORN            reduce using rule 45 (death -> name DIED deathPredicate .)
+    HUSBAND         reduce using rule 45 (death -> name DIED deathPredicate .)
+    WIFE            reduce using rule 45 (death -> name DIED deathPredicate .)
+    MARRIAGE        reduce using rule 45 (death -> name DIED deathPredicate .)
+    YEAR            reduce using rule 45 (death -> name DIED deathPredicate .)
+    INITIAL         reduce using rule 45 (death -> name DIED deathPredicate .)
+    $end            reduce using rule 45 (death -> name DIED deathPredicate .)
+
+
+state 111
+
+    (76) spouse -> WIFE name MARRIED . date place
+    (21) date -> . WEEKDAY date
+    (22) date -> . NUMBER MONTH
+    (23) date -> . MONTH NUMBER
+    (24) date -> . NUMBER MONTH YEAR
+    (25) date -> . MONTH NUMBER YEAR
+
+    WEEKDAY         shift and go to state 7
+    NUMBER          shift and go to state 4
+    MONTH           shift and go to state 24
+
+    date                           shift and go to state 132
+
+state 112
+
+    (75) spouse -> WIFE NUMBER name .
+
+    CAPITAL         reduce using rule 75 (spouse -> WIFE NUMBER name .)
+    AND             reduce using rule 75 (spouse -> WIFE NUMBER name .)
+    HUSBAND         reduce using rule 75 (spouse -> WIFE NUMBER name .)
+    BORN            reduce using rule 75 (spouse -> WIFE NUMBER name .)
+    PERIOD          reduce using rule 75 (spouse -> WIFE NUMBER name .)
+
+
+state 113
+
+    (25) date -> MONTH NUMBER YEAR .
+
+    CAPITAL         reduce using rule 25 (date -> MONTH NUMBER YEAR .)
+    STATE           reduce using rule 25 (date -> MONTH NUMBER YEAR .)
+    PERIOD          reduce using rule 25 (date -> MONTH NUMBER YEAR .)
+    NEWLINE         reduce using rule 25 (date -> MONTH NUMBER YEAR .)
+    TITLE           reduce using rule 25 (date -> MONTH NUMBER YEAR .)
+    WEEKDAY         reduce using rule 25 (date -> MONTH NUMBER YEAR .)
+    NUMBER          reduce using rule 25 (date -> MONTH NUMBER YEAR .)
+    MONTH           reduce using rule 25 (date -> MONTH NUMBER YEAR .)
+    BORN            reduce using rule 25 (date -> MONTH NUMBER YEAR .)
+    HUSBAND         reduce using rule 25 (date -> MONTH NUMBER YEAR .)
+    WIFE            reduce using rule 25 (date -> MONTH NUMBER YEAR .)
+    MARRIAGE        reduce using rule 25 (date -> MONTH NUMBER YEAR .)
+    YEAR            reduce using rule 25 (date -> MONTH NUMBER YEAR .)
+    INITIAL         reduce using rule 25 (date -> MONTH NUMBER YEAR .)
+    $end            reduce using rule 25 (date -> MONTH NUMBER YEAR .)
+    AND             reduce using rule 25 (date -> MONTH NUMBER YEAR .)
+
+
+state 114
+
+    (32) miscellany -> CAPITAL NUMBER NUMBER .
+
+    WEEKDAY         reduce using rule 32 (miscellany -> CAPITAL NUMBER NUMBER .)
+    NUMBER          reduce using rule 32 (miscellany -> CAPITAL NUMBER NUMBER .)
+    MONTH           reduce using rule 32 (miscellany -> CAPITAL NUMBER NUMBER .)
+
+
+state 115
+
+    (31) referenceSentence -> reference miscellany date NEWLINE .
+
+    CAPITAL         reduce using rule 31 (referenceSentence -> reference miscellany date NEWLINE .)
+    TITLE           reduce using rule 31 (referenceSentence -> reference miscellany date NEWLINE .)
+    WEEKDAY         reduce using rule 31 (referenceSentence -> reference miscellany date NEWLINE .)
+    NUMBER          reduce using rule 31 (referenceSentence -> reference miscellany date NEWLINE .)
+    MONTH           reduce using rule 31 (referenceSentence -> reference miscellany date NEWLINE .)
+    BORN            reduce using rule 31 (referenceSentence -> reference miscellany date NEWLINE .)
+    HUSBAND         reduce using rule 31 (referenceSentence -> reference miscellany date NEWLINE .)
+    WIFE            reduce using rule 31 (referenceSentence -> reference miscellany date NEWLINE .)
+    MARRIAGE        reduce using rule 31 (referenceSentence -> reference miscellany date NEWLINE .)
+    YEAR            reduce using rule 31 (referenceSentence -> reference miscellany date NEWLINE .)
+    INITIAL         reduce using rule 31 (referenceSentence -> reference miscellany date NEWLINE .)
+    $end            reduce using rule 31 (referenceSentence -> reference miscellany date NEWLINE .)
+
+
+state 116
+
+    (63) spouseSentence -> TITLE CAPITAL spouse spouseSentenceEnd .
+
+    CAPITAL         reduce using rule 63 (spouseSentence -> TITLE CAPITAL spouse spouseSentenceEnd .)
+    TITLE           reduce using rule 63 (spouseSentence -> TITLE CAPITAL spouse spouseSentenceEnd .)
+    WEEKDAY         reduce using rule 63 (spouseSentence -> TITLE CAPITAL spouse spouseSentenceEnd .)
+    NUMBER          reduce using rule 63 (spouseSentence -> TITLE CAPITAL spouse spouseSentenceEnd .)
+    MONTH           reduce using rule 63 (spouseSentence -> TITLE CAPITAL spouse spouseSentenceEnd .)
+    BORN            reduce using rule 63 (spouseSentence -> TITLE CAPITAL spouse spouseSentenceEnd .)
+    HUSBAND         reduce using rule 63 (spouseSentence -> TITLE CAPITAL spouse spouseSentenceEnd .)
+    WIFE            reduce using rule 63 (spouseSentence -> TITLE CAPITAL spouse spouseSentenceEnd .)
+    MARRIAGE        reduce using rule 63 (spouseSentence -> TITLE CAPITAL spouse spouseSentenceEnd .)
+    YEAR            reduce using rule 63 (spouseSentence -> TITLE CAPITAL spouse spouseSentenceEnd .)
+    INITIAL         reduce using rule 63 (spouseSentence -> TITLE CAPITAL spouse spouseSentenceEnd .)
+    $end            reduce using rule 63 (spouseSentence -> TITLE CAPITAL spouse spouseSentenceEnd .)
+
+
+state 117
+
+    (58) birth -> BORN date place SONOF . names
+    (17) names -> . name AND name
+    (18) names -> . CAPITAL AND name
+    (19) names -> . CAPITAL INITIAL AND name
+    (20) names -> . CAPITAL INITIAL SUFFIX AND name
+    (8) name -> . CAPITAL subname
+    (9) name -> . INITIAL subname
+    (10) name -> . CAPITAL subname SUFFIX
+    (11) name -> . TITLE name
+
+    CAPITAL         shift and go to state 121
+    INITIAL         shift and go to state 14
+    TITLE           shift and go to state 32
+
+    names                          shift and go to state 133
+    name                           shift and go to state 118
+
+state 118
+
+    (17) names -> name . AND name
+
+    AND             shift and go to state 134
+
+
+state 119
+
+    (59) birth -> BORN date place DAUGHTEROF . names
+    (17) names -> . name AND name
+    (18) names -> . CAPITAL AND name
+    (19) names -> . CAPITAL INITIAL AND name
+    (20) names -> . CAPITAL INITIAL SUFFIX AND name
+    (8) name -> . CAPITAL subname
+    (9) name -> . INITIAL subname
+    (10) name -> . CAPITAL subname SUFFIX
+    (11) name -> . TITLE name
+
+    CAPITAL         shift and go to state 121
+    INITIAL         shift and go to state 14
+    TITLE           shift and go to state 32
+
+    names                          shift and go to state 135
+    name                           shift and go to state 118
+
+state 120
+
+    (57) birth -> BORN date place names .
+
+    PERIOD          reduce using rule 57 (birth -> BORN date place names .)
+    NEWLINE         reduce using rule 57 (birth -> BORN date place names .)
+    SUFFIX          reduce using rule 57 (birth -> BORN date place names .)
+
+
+state 121
+
+    (18) names -> CAPITAL . AND name
+    (19) names -> CAPITAL . INITIAL AND name
+    (20) names -> CAPITAL . INITIAL SUFFIX AND name
+    (8) name -> CAPITAL . subname
+    (10) name -> CAPITAL . subname SUFFIX
+    (12) subname -> . CAPITAL
+    (13) subname -> . CAPITAL subname
+    (14) subname -> . nee subname
+    (15) subname -> . INITIAL subname
+    (16) nee -> . LPAREN CAPITAL RPAREN
+
+    AND             shift and go to state 136
+    INITIAL         shift and go to state 137
+    CAPITAL         shift and go to state 49
+    LPAREN          shift and go to state 48
+
+    nee                            shift and go to state 45
+    subname                        shift and go to state 60
+
+state 122
+
+    (36) place -> CAPITAL place .
+
+    WEEKDAY         reduce using rule 36 (place -> CAPITAL place .)
+    SONOF           reduce using rule 36 (place -> CAPITAL place .)
+    DAUGHTEROF      reduce using rule 36 (place -> CAPITAL place .)
+    CAPITAL         reduce using rule 36 (place -> CAPITAL place .)
+    INITIAL         reduce using rule 36 (place -> CAPITAL place .)
+    TITLE           reduce using rule 36 (place -> CAPITAL place .)
+    PERIOD          reduce using rule 36 (place -> CAPITAL place .)
+    NEWLINE         reduce using rule 36 (place -> CAPITAL place .)
+    NUMBER          reduce using rule 36 (place -> CAPITAL place .)
+    MONTH           reduce using rule 36 (place -> CAPITAL place .)
+    BORN            reduce using rule 36 (place -> CAPITAL place .)
+    HUSBAND         reduce using rule 36 (place -> CAPITAL place .)
+    WIFE            reduce using rule 36 (place -> CAPITAL place .)
+    MARRIAGE        reduce using rule 36 (place -> CAPITAL place .)
+    YEAR            reduce using rule 36 (place -> CAPITAL place .)
+    $end            reduce using rule 36 (place -> CAPITAL place .)
+    DIED            reduce using rule 36 (place -> CAPITAL place .)
+    AND             reduce using rule 36 (place -> CAPITAL place .)
+
+
+state 123
+
+    (73) spouse -> HUSBAND name AND name .
+
+    CAPITAL         reduce using rule 73 (spouse -> HUSBAND name AND name .)
+    AND             reduce using rule 73 (spouse -> HUSBAND name AND name .)
+    HUSBAND         reduce using rule 73 (spouse -> HUSBAND name AND name .)
+    BORN            reduce using rule 73 (spouse -> HUSBAND name AND name .)
+    PERIOD          reduce using rule 73 (spouse -> HUSBAND name AND name .)
+
+
+state 124
+
+    (72) spouse -> HUSBAND name MARRIED date .
+
+    CAPITAL         reduce using rule 72 (spouse -> HUSBAND name MARRIED date .)
+    AND             reduce using rule 72 (spouse -> HUSBAND name MARRIED date .)
+    HUSBAND         reduce using rule 72 (spouse -> HUSBAND name MARRIED date .)
+    BORN            reduce using rule 72 (spouse -> HUSBAND name MARRIED date .)
+    PERIOD          reduce using rule 72 (spouse -> HUSBAND name MARRIED date .)
+
+
+state 125
+
+    (16) nee -> LPAREN CAPITAL RPAREN .
+
+    CAPITAL         reduce using rule 16 (nee -> LPAREN CAPITAL RPAREN .)
+    INITIAL         reduce using rule 16 (nee -> LPAREN CAPITAL RPAREN .)
+    LPAREN          reduce using rule 16 (nee -> LPAREN CAPITAL RPAREN .)
+
+
+state 126
+
+    (62) spouseSentence -> CAPITAL CAPITAL spouse spouseSentenceEnd .
+
+    CAPITAL         reduce using rule 62 (spouseSentence -> CAPITAL CAPITAL spouse spouseSentenceEnd .)
+    TITLE           reduce using rule 62 (spouseSentence -> CAPITAL CAPITAL spouse spouseSentenceEnd .)
+    WEEKDAY         reduce using rule 62 (spouseSentence -> CAPITAL CAPITAL spouse spouseSentenceEnd .)
+    NUMBER          reduce using rule 62 (spouseSentence -> CAPITAL CAPITAL spouse spouseSentenceEnd .)
+    MONTH           reduce using rule 62 (spouseSentence -> CAPITAL CAPITAL spouse spouseSentenceEnd .)
+    BORN            reduce using rule 62 (spouseSentence -> CAPITAL CAPITAL spouse spouseSentenceEnd .)
+    HUSBAND         reduce using rule 62 (spouseSentence -> CAPITAL CAPITAL spouse spouseSentenceEnd .)
+    WIFE            reduce using rule 62 (spouseSentence -> CAPITAL CAPITAL spouse spouseSentenceEnd .)
+    MARRIAGE        reduce using rule 62 (spouseSentence -> CAPITAL CAPITAL spouse spouseSentenceEnd .)
+    YEAR            reduce using rule 62 (spouseSentence -> CAPITAL CAPITAL spouse spouseSentenceEnd .)
+    INITIAL         reduce using rule 62 (spouseSentence -> CAPITAL CAPITAL spouse spouseSentenceEnd .)
+    $end            reduce using rule 62 (spouseSentence -> CAPITAL CAPITAL spouse spouseSentenceEnd .)
+
+
+state 127
+
+    (48) deathPhrase -> NUMBER NUMBER place .
+
+    DIED            reduce using rule 48 (deathPhrase -> NUMBER NUMBER place .)
+
+
+state 128
+
+    (44) death -> name deathPhrase DIED deathPredicate .
+
+    PERIOD          reduce using rule 44 (death -> name deathPhrase DIED deathPredicate .)
+    NEWLINE         reduce using rule 44 (death -> name deathPhrase DIED deathPredicate .)
+    CAPITAL         reduce using rule 44 (death -> name deathPhrase DIED deathPredicate .)
+    TITLE           reduce using rule 44 (death -> name deathPhrase DIED deathPredicate .)
+    WEEKDAY         reduce using rule 44 (death -> name deathPhrase DIED deathPredicate .)
+    NUMBER          reduce using rule 44 (death -> name deathPhrase DIED deathPredicate .)
+    MONTH           reduce using rule 44 (death -> name deathPhrase DIED deathPredicate .)
+    BORN            reduce using rule 44 (death -> name deathPhrase DIED deathPredicate .)
+    HUSBAND         reduce using rule 44 (death -> name deathPhrase DIED deathPredicate .)
+    WIFE            reduce using rule 44 (death -> name deathPhrase DIED deathPredicate .)
+    MARRIAGE        reduce using rule 44 (death -> name deathPhrase DIED deathPredicate .)
+    YEAR            reduce using rule 44 (death -> name deathPhrase DIED deathPredicate .)
+    INITIAL         reduce using rule 44 (death -> name deathPhrase DIED deathPredicate .)
+    $end            reduce using rule 44 (death -> name deathPhrase DIED deathPredicate .)
+
+
+state 129
+
+    (49) deathPredicate -> place WEEKDAY .
+
+    PERIOD          reduce using rule 49 (deathPredicate -> place WEEKDAY .)
+    NEWLINE         reduce using rule 49 (deathPredicate -> place WEEKDAY .)
+    CAPITAL         reduce using rule 49 (deathPredicate -> place WEEKDAY .)
+    TITLE           reduce using rule 49 (deathPredicate -> place WEEKDAY .)
+    WEEKDAY         reduce using rule 49 (deathPredicate -> place WEEKDAY .)
+    NUMBER          reduce using rule 49 (deathPredicate -> place WEEKDAY .)
+    MONTH           reduce using rule 49 (deathPredicate -> place WEEKDAY .)
+    BORN            reduce using rule 49 (deathPredicate -> place WEEKDAY .)
+    HUSBAND         reduce using rule 49 (deathPredicate -> place WEEKDAY .)
+    WIFE            reduce using rule 49 (deathPredicate -> place WEEKDAY .)
+    MARRIAGE        reduce using rule 49 (deathPredicate -> place WEEKDAY .)
+    YEAR            reduce using rule 49 (deathPredicate -> place WEEKDAY .)
+    INITIAL         reduce using rule 49 (deathPredicate -> place WEEKDAY .)
+    $end            reduce using rule 49 (deathPredicate -> place WEEKDAY .)
+
+
+state 130
+
+    (52) deathPredicate -> WEEKDAY place .
+
+    PERIOD          reduce using rule 52 (deathPredicate -> WEEKDAY place .)
+    NEWLINE         reduce using rule 52 (deathPredicate -> WEEKDAY place .)
+    CAPITAL         reduce using rule 52 (deathPredicate -> WEEKDAY place .)
+    TITLE           reduce using rule 52 (deathPredicate -> WEEKDAY place .)
+    WEEKDAY         reduce using rule 52 (deathPredicate -> WEEKDAY place .)
+    NUMBER          reduce using rule 52 (deathPredicate -> WEEKDAY place .)
+    MONTH           reduce using rule 52 (deathPredicate -> WEEKDAY place .)
+    BORN            reduce using rule 52 (deathPredicate -> WEEKDAY place .)
+    HUSBAND         reduce using rule 52 (deathPredicate -> WEEKDAY place .)
+    WIFE            reduce using rule 52 (deathPredicate -> WEEKDAY place .)
+    MARRIAGE        reduce using rule 52 (deathPredicate -> WEEKDAY place .)
+    YEAR            reduce using rule 52 (deathPredicate -> WEEKDAY place .)
+    INITIAL         reduce using rule 52 (deathPredicate -> WEEKDAY place .)
+    $end            reduce using rule 52 (deathPredicate -> WEEKDAY place .)
+
+
+state 131
+
+    (50) deathPredicate -> date place .
+
+    PERIOD          reduce using rule 50 (deathPredicate -> date place .)
+    NEWLINE         reduce using rule 50 (deathPredicate -> date place .)
+    CAPITAL         reduce using rule 50 (deathPredicate -> date place .)
+    TITLE           reduce using rule 50 (deathPredicate -> date place .)
+    WEEKDAY         reduce using rule 50 (deathPredicate -> date place .)
+    NUMBER          reduce using rule 50 (deathPredicate -> date place .)
+    MONTH           reduce using rule 50 (deathPredicate -> date place .)
+    BORN            reduce using rule 50 (deathPredicate -> date place .)
+    HUSBAND         reduce using rule 50 (deathPredicate -> date place .)
+    WIFE            reduce using rule 50 (deathPredicate -> date place .)
+    MARRIAGE        reduce using rule 50 (deathPredicate -> date place .)
+    YEAR            reduce using rule 50 (deathPredicate -> date place .)
+    INITIAL         reduce using rule 50 (deathPredicate -> date place .)
+    $end            reduce using rule 50 (deathPredicate -> date place .)
+
+
+state 132
+
+    (76) spouse -> WIFE name MARRIED date . place
+    (36) place -> . CAPITAL place
+    (37) place -> . CAPITAL
+    (38) place -> . STATE
+
+    CAPITAL         shift and go to state 85
+    STATE           shift and go to state 83
+
+    place                          shift and go to state 138
+
+state 133
+
+    (58) birth -> BORN date place SONOF names .
+
+    PERIOD          reduce using rule 58 (birth -> BORN date place SONOF names .)
+    NEWLINE         reduce using rule 58 (birth -> BORN date place SONOF names .)
+    SUFFIX          reduce using rule 58 (birth -> BORN date place SONOF names .)
+
+
+state 134
+
+    (17) names -> name AND . name
+    (8) name -> . CAPITAL subname
+    (9) name -> . INITIAL subname
+    (10) name -> . CAPITAL subname SUFFIX
+    (11) name -> . TITLE name
+
+    CAPITAL         shift and go to state 42
+    INITIAL         shift and go to state 14
+    TITLE           shift and go to state 32
+
+    name                           shift and go to state 139
+
+state 135
+
+    (59) birth -> BORN date place DAUGHTEROF names .
+
+    PERIOD          reduce using rule 59 (birth -> BORN date place DAUGHTEROF names .)
+    NEWLINE         reduce using rule 59 (birth -> BORN date place DAUGHTEROF names .)
+    SUFFIX          reduce using rule 59 (birth -> BORN date place DAUGHTEROF names .)
+
+
+state 136
+
+    (18) names -> CAPITAL AND . name
+    (8) name -> . CAPITAL subname
+    (9) name -> . INITIAL subname
+    (10) name -> . CAPITAL subname SUFFIX
+    (11) name -> . TITLE name
+
+    CAPITAL         shift and go to state 42
+    INITIAL         shift and go to state 14
+    TITLE           shift and go to state 32
+
+    name                           shift and go to state 140
+
+state 137
+
+    (19) names -> CAPITAL INITIAL . AND name
+    (20) names -> CAPITAL INITIAL . SUFFIX AND name
+    (15) subname -> INITIAL . subname
+    (12) subname -> . CAPITAL
+    (13) subname -> . CAPITAL subname
+    (14) subname -> . nee subname
+    (15) subname -> . INITIAL subname
+    (16) nee -> . LPAREN CAPITAL RPAREN
+
+    AND             shift and go to state 141
+    SUFFIX          shift and go to state 142
+    CAPITAL         shift and go to state 49
+    INITIAL         shift and go to state 46
+    LPAREN          shift and go to state 48
+
+    nee                            shift and go to state 45
+    subname                        shift and go to state 91
+
+state 138
+
+    (76) spouse -> WIFE name MARRIED date place .
+
+    CAPITAL         reduce using rule 76 (spouse -> WIFE name MARRIED date place .)
+    AND             reduce using rule 76 (spouse -> WIFE name MARRIED date place .)
+    HUSBAND         reduce using rule 76 (spouse -> WIFE name MARRIED date place .)
+    BORN            reduce using rule 76 (spouse -> WIFE name MARRIED date place .)
+    PERIOD          reduce using rule 76 (spouse -> WIFE name MARRIED date place .)
+
+
+state 139
+
+    (17) names -> name AND name .
+
+    PERIOD          reduce using rule 17 (names -> name AND name .)
+    NEWLINE         reduce using rule 17 (names -> name AND name .)
+    SUFFIX          reduce using rule 17 (names -> name AND name .)
+
+
+state 140
+
+    (18) names -> CAPITAL AND name .
+
+    PERIOD          reduce using rule 18 (names -> CAPITAL AND name .)
+    NEWLINE         reduce using rule 18 (names -> CAPITAL AND name .)
+    SUFFIX          reduce using rule 18 (names -> CAPITAL AND name .)
+
+
+state 141
+
+    (19) names -> CAPITAL INITIAL AND . name
+    (8) name -> . CAPITAL subname
+    (9) name -> . INITIAL subname
+    (10) name -> . CAPITAL subname SUFFIX
+    (11) name -> . TITLE name
+
+    CAPITAL         shift and go to state 42
+    INITIAL         shift and go to state 14
+    TITLE           shift and go to state 32
+
+    name                           shift and go to state 143
+
+state 142
+
+    (20) names -> CAPITAL INITIAL SUFFIX . AND name
+
+    AND             shift and go to state 144
+
+
+state 143
+
+    (19) names -> CAPITAL INITIAL AND name .
+
+    PERIOD          reduce using rule 19 (names -> CAPITAL INITIAL AND name .)
+    NEWLINE         reduce using rule 19 (names -> CAPITAL INITIAL AND name .)
+    SUFFIX          reduce using rule 19 (names -> CAPITAL INITIAL AND name .)
+
+
+state 144
+
+    (20) names -> CAPITAL INITIAL SUFFIX AND . name
+    (8) name -> . CAPITAL subname
+    (9) name -> . INITIAL subname
+    (10) name -> . CAPITAL subname SUFFIX
+    (11) name -> . TITLE name
+
+    CAPITAL         shift and go to state 42
+    INITIAL         shift and go to state 14
+    TITLE           shift and go to state 32
+
+    name                           shift and go to state 145
+
+state 145
+
+    (20) names -> CAPITAL INITIAL SUFFIX AND name .
+
+    PERIOD          reduce using rule 20 (names -> CAPITAL INITIAL SUFFIX AND name .)
+    NEWLINE         reduce using rule 20 (names -> CAPITAL INITIAL SUFFIX AND name .)
+    SUFFIX          reduce using rule 20 (names -> CAPITAL INITIAL SUFFIX AND name .)
+
+WARNING: 
+WARNING: Conflicts:
+WARNING: 
+WARNING: shift/reduce conflict for CAPITAL in state 2 resolved as shift
+WARNING: shift/reduce conflict for INITIAL in state 2 resolved as shift
+WARNING: shift/reduce conflict for TITLE in state 2 resolved as shift
+WARNING: shift/reduce conflict for YEAR in state 35 resolved as shift
+WARNING: shift/reduce conflict for AND in state 41 resolved as shift
+WARNING: shift/reduce conflict for CAPITAL in state 49 resolved as shift
+WARNING: shift/reduce conflict for SUFFIX in state 60 resolved as shift
+WARNING: shift/reduce conflict for YEAR in state 75 resolved as shift
+WARNING: shift/reduce conflict for CAPITAL in state 85 resolved as shift
+WARNING: shift/reduce conflict for CAPITAL in state 109 resolved as shift

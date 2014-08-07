@@ -1,0 +1,24 @@
+(WORD, food) (ISKINDOF, is a kind of) (WORD, thing) (THAT, that) (IS, is) (WORD, edible) (PERIOD, .) (WORD, food) (HASSOMETEXTCALLED, has some text called) (WORD, flavor) (PERIOD, .) (THE, the) (WORD, flavor) (OF, of) (WORD, food) (IS, is) (USUALLY, usually) (STRING, "yummy") (PERIOD, .) (NEWLINE, 
+
+) (WORD, asparagus) (ISKINDOF, is a kind of) (WORD, food) (PERIOD, .) (THE, the) (WORD, flavor) (OF, of) (WORD, asparagus) (IS, is) (STRING, "yucky") (PERIOD, .) (NEWLINE, 
+
+) (WORD, strawberry) (ISKINDOF, is a kind of) (WORD, food) (PERIOD, .) (NEWLINE, 
+
+) (WORD, kuriteru) (IS, is) (WORD, person) (PERIOD, .) (WORD, kuriteru) (HASSOMETEXTCALLED, has some text called) (WORD, color) (PERIOD, .) (THE, the) (WORD, color) (OF, of) (WORD, kuriteru) (IS, is) (USUALLY, usually) (STRING, "purple") (PERIOD, .) (NEWLINE, 
+
+) (WORD, kuriteru's) (WORD, yard) (IS, is) (ROOM, room) (PERIOD, .) (STRING, "This is where Kuriteru lives. A large tree is in the middle of the square. A swing made from a tire and rope hangs from a branch.") (NEWLINE, 
+
+) (WORD, large) (WORD, tree) (WORD, trunk) (ISIN, is in) (THE, the) (WORD, middle) (OF, of) (WORD, kuriteru's) (WORD, yard) (PERIOD, .) (NEWLINE, 
+
+) (UNDERSTAND, understand) (STRING, "tree") (OR, or) (STRING, "trunk") (AS, as) (WORD, large) (WORD, tree) (WORD, trunk) (PERIOD, .) (NEWLINE, 
+
+) (WORD, treehouse) (IS, is) (WORD, up) (FROM, from) (WORD, kuriteru's) (WORD, yard) (PERIOD, .) (STRING, "Kuriteru lives in this treehouse. It is woven from reeds and flexible tree branches.") (NEWLINE, 
+
+) (WORD, vegetable) (WORD, patch) (IS, is) (WORD, south) (FROM, from) (WORD, kuriteru's) (WORD, yard) (PERIOD, .) (STRING, "The Vegetable Patch has several asparagus plants.") (NEWLINE, 
+
+) (IN, in) (THE, the) (WORD, vegetable) (WORD, patch) (IS, are) (NUMBER, 12) (WORD, asparagus) (PERIOD, .) (NEWLINE, 
+
+) (WORD, berry) (WORD, patch) (IS, is) (WORD, west) (FROM, from) (WORD, kuriteru's) (WORD, yard) (PERIOD, .) (STRING, "The Berry Patch has several strawberry plants.") (NEWLINE, 
+
+) (IN, in) (THE, the) (WORD, berry) (WORD, patch) (IS, are) (NUMBER, 25) (WORD, strawberries) (PERIOD, .) (NEWLINE, 
+) 

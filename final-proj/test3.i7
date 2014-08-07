@@ -1,0 +1,7 @@
+Kuriteru is a person. Kuriteru has some text called color. The color of Kuriteru is usually "purple".
+
+Every turn:
+	if the color of Kuriteru is "purple":
+		say "Kuriteru is purple.";
+	if the color of Kuriteru is "green":
+		say "Kuriteru is green.";

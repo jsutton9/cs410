@@ -1,0 +1,22 @@
+(CAPITAL, Grant) (CAPITAL, County) (PAPER, Press) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Junior) (CAPITAL, William) (CAPITAL, Cox) (NUMBER, 73) (CAPITAL, Winchester) (STATE, Va.) (DIED, died) (MONTH, August) (NUMBER, 25) (CAPITAL, Winchester) (CAPITAL, Medical) (CAPITAL, Center) (CAPITAL, Winchester) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(BORN, Born) (MONTH, June) (NUMBER, 4) (YEAR, 1930) (CAPITAL, Petersburg) (SONOF, son of) (CAPITAL, Thomas) (CAPITAL, William) (AND, and) (CAPITAL, Elizabeth) (CAPITAL, Sena) (LPAREN, () (CAPITAL, Mongold) (RPAREN, )) (CAPITAL, Cox) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, He) (WIFE, wife) (CAPITAL, Kay) (INITIAL, Y.) (CAPITAL, Cox) (MARRIED, married) (MONTH, April) (NUMBER, 29) (YEAR, 1970) (CAPITAL, Seoul) (CAPITAL, South) (CAPITAL, Korea) (PERIOD, ;) (CAPITAL, Betty) (CAPITAL, Cavalier) (CAPITAL, Clarksville) (CAPITAL, Tenn) (PERIOD, .) (AND, and) (CAPITAL, Julia) (CAPITAL, Cullers) (CAPITAL, Marina) (CAPITAL, Calif) (PERIOD, .) (PERIOD, ;) (CAPITAL, Mary) (INITIAL, E.) (CAPITAL, Mauzy) (CAPITAL, Polly) (CAPITAL, Alt) (AND, and) (CAPITAL, Nancy) (INITIAL, C.) (CAPITAL, Givan) (CAPITAL, Petersburg) (AND, and) (CAPITAL, Anna) (CAPITAL, Lee) (CAPITAL, Bible) (MONTH, May) (PERIOD, ;) (INITIAL, C.) (CAPITAL, Wayne) (CAPITAL, Cox) (CAPITAL, Manassas) (STATE, Va.) (PERIOD, ;) (AND, and) (AND, and) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Funeral) (MONTH, August) (NUMBER, 28) (CAPITAL, Sacred) (CAPITAL, Heart) (CAPITAL, Jesus) (CAPITAL, Catholic) (CAPITAL, Church) (CAPITAL, Sacred) (CAPITAL, Heart) (CAPITAL, Cemetery) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Arrangements) (CAPITAL, Omps) (CAPITAL, Funeral) (CAPITAL, Home) (CAPITAL, Amherst) (CAPITAL, Chapel) (CAPITAL, Winchester) (PERIOD, .) (LPAREN, () (NUMBER, 9) (NUMBER, 2) (RPAREN, )) (NEWLINE, 
+) 

@@ -1,0 +1,32 @@
+(CAPITAL, Elkins) (PAPER, Intermountain) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Jonathan) (CAPITAL, Keith) (CAPITAL, Hiser) (NUMBER, 76) (NUMBER, 210) (CAPITAL, Judy) (CAPITAL, St.) (CAPITAL, Petersburg) (DIED, departed) (WEEKDAY, Thursday) (MONTH, May) (NUMBER, 20) (YEAR, 2004) (NEWLINE, 
+) 
+(PERIOD, .) (NEWLINE, 
+) 
+(CAPITAL, He) (BORN, born) (MONTH, February) (NUMBER, 13) (YEAR, 1928) (CAPITAL, Landes) (SONOF, son of) (CAPITAL, Bert) (INITIAL, F.) (AND, and) (CAPITAL, Minnie) (INITIAL, J.) (CAPITAL, Hiser) (PERIOD, .) (NEWLINE, 
+) 
+(CAPITAL, In) (YEAR, 1950) (MARRIED, married) (CAPITAL, Norma) (CAPITAL, Hardy) (AND, and) (CAPITAL, Joan) (INITIAL, M.) (CAPITAL, Wertz) (CAPITAL, Morrisdale) (CAPITAL, Pa) (PERIOD, .) (CAPITAL, Patricia) (CAPITAL, Pat) (CAPITAL, Shinn) (CAPITAL, Saranac) (INITIAL, N.) (INITIAL, Y.) (CAPITAL, Jonathan) (INITIAL, K.) (CAPITAL, Hiser) (CAPITAL, II) (CAPITAL, Butler) (CAPITAL, Pa) (PERIOD, .) (AND, and) (CAPITAL, Helen) (INITIAL, F.) (CAPITAL, Hiser) (CAPITAL, Stephens) (CAPITAL, City) (STATE, Va.) (PERIOD, ;) (NUMBER, 10) (AND, and) (AND, and) (PERIOD, -) (AND, and) (PERIOD, .) (NEWLINE, 
+) 
+(CAPITAL, He) (CAPITAL, Roy) (INITIAL, F.) (CAPITAL, Hiser) (CAPITAL, Cincinnati) (CAPITAL, Ohio) (PERIOD, ;) (AND, and) (CAPITAL, Eileen) (CAPITAL, Dove) (CAPITAL, Mozer) (AND, and) (CAPITAL, Mary) (CAPITAL, Frances) (CAPITAL, Pryor) (CAPITAL, Summersville) (PERIOD, .) (NEWLINE, 
+) 
+(CAPITAL, Preceding) (CAPITAL, Jesse) (CAPITAL, Ronald) (CAPITAL, Hiser) (CAPITAL, Robert) (CAPITAL, Quentin) (CAPITAL, Hiser) (AND, and) (CAPITAL, Warren) (CAPITAL, Paul) (CAPITAL, Hiser) (PERIOD, ;) (AND, and) (CAPITAL, Wilda) (CAPITAL, Elaine) (CAPITAL, Ours) (PERIOD, .) (NEWLINE, 
+) 
+(CAPITAL, A) (YEAR, 1944) (CAPITAL, Petersburg) (CAPITAL, High) (CAPITAL, School) (AND, and) (INITIAL, U.) (INITIAL, S.) (CAPITAL, Army) (CAPITAL, Keith) (CAPITAL, Davis) (CAPITAL, Elkins) (CAPITAL, College) (AND, and) (CAPITAL, West) (CAPITAL, Virginia) (CAPITAL, University) (CAPITAL, University) (CAPITAL, Tennessee) (PERIOD, .) (NEWLINE, 
+) 
+(CAPITAL, He) (AND, and) (CAPITAL, Davis) (CAPITAL, Elkins) (CAPITAL, College) (YEAR, 1955) (NEWLINE, 
+) 
+(YEAR, 1991) (AND, and) (AND, and) (PERIOD, .) (NEWLINE, 
+) 
+(CAPITAL, He) (CAPITAL, Flynn) (CAPITAL, Planetarium) (AND, and) (YEAR, 1972) (PERIOD, .) (NEWLINE, 
+) 
+(CAPITAL, He) (CAPITAL, West) (CAPITAL, Virginia) (CAPITAL, Academy) (CAPITAL, Science) (CAPITAL, American) (CAPITAL, Physics) (CAPITAL, Society) (NEWLINE, 
+) 
+(CAPITAL, American) (CAPITAL, Association) (CAPITAL, Physics) (CAPITAL, Teachers) (CAPITAL, International) (CAPITAL, Planetarium) (CAPITAL, Society) (AND, and) (CAPITAL, Chi) (CAPITAL, Beta) (CAPITAL, Phi) (NEWLINE, 
+) 
+(NUMBER, 12) (PERIOD, .) (NEWLINE, 
+) 
+(CAPITAL, He) (CAPITAL, West) (CAPITAL, Virginia) (CAPITAL, Eastern) (CAPITAL, Regional) (CAPITAL, Science) (AND, and) (CAPITAL, Engineering) (CAPITAL, Fair) (AND, and) (NEWLINE, 
+) 

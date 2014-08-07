@@ -1,0 +1,16 @@
+(CAPITAL, Pendleton) (PAPER, Times) (MONTH, February) (NUMBER, 26) (YEAR, 1926) (PERIOD, :) (NEWLINE, 
+) 
+(PERIOD, :) (PERIOD, .) (PERIOD, .) (PERIOD, .) (PERIOD, -) (PERIOD, .) (CAPITAL, GET) (PERIOD, -) (CAPITAL, I) (NUMBER, 3312) (NEWLINE, 
+) 
+(CAPITAL, Harman) (STATE, W. Va.) (MONTH, February) (NUMBER, 21) (YEAR, 1926) (PERIOD, -) (PERIOD, -) (PERIOD, -) (CAPITAL, We) (CAPITAL, Civil) (CAPITAL, War) (CAPITAL, Veterans) (TITLE, Mr.) (CAPITAL, Adam) (CAPITAL, Yokum) (DIED, died) (MONTH, February) (NUMBER, 14) (YEAR, 1926) (PERIOD, .) (CAPITAL, Age) (NUMBER, 84) (PERIOD, .) (NUMBER, 9) (PERIOD, .) (NUMBER, 7) (PERIOD, .) (CAPITAL, Interment) (CAPITAL, Cemetery) (WEEKDAY, Monday) (MONTH, February) (NUMBER, 15) (PERIOD, .) (WIFE, wife) (PERIOD, .) (NEWLINE, 
+) 
+(TITLE, Mr.) (CAPITAL, Yokum) (MARRIAGE, marriage) (CAPITAL, Rebecca) (CAPITAL, Mouse) (AND, and) (BORN, born) (PERIOD, ;) (CAPITAL, Anzina) (LPAREN, () (WIFE, wife) (CAPITAL, Harris) (CAPITAL, Harman) (AND, and) (DIED, died) (RPAREN, )) (AND, and) (PERIOD, :) (CAPITAL, Jasper) (INITIAL, J.) (CAPITAL, Michael) (AND, and) (CAPITAL, Walter) (CAPITAL, Harman) (CAPITAL, Daniel) (AND, and) (CAPITAL, Esten) (CAPITAL, Mouth) (CAPITAL, Seneca) (PERIOD, ;) (AND, and) (CAPITAL, Dennis) (CAPITAL, Dry) (CAPITAL, Fork) (STATE, W. Va.) (PERIOD, .) (NEWLINE, 
+) 
+(CAPITAL, He) (CAPITAL, George) (INITIAL, W.) (CAPITAL, Yokum) (AND, and) (TITLE, Mrs.) (CAPITAL, Rebecca) (CAPITAL, Sites) (TITLE, Mrs.) (CAPITAL, Frances) (CAPITAL, Stump) (AND, and) (TITLE, Mrs.) (CAPITAL, Mahala) (CAPITAL, Stump) (CAPITAL, Grant) (PERIOD, .) (CAPITAL, Also) (AND, and) (AND, and) (PERIOD, -) (AND, and) (AND, and) (PERIOD, -) (PERIOD, -) (AND, and) (PERIOD, .) (CAPITAL, Since) (MARRIAGE, marriage) (TITLE, Mr.) (CAPITAL, Yokum) (CAPITAL, Harman) (AND, and) (CAPITAL, Presbyterian) (PERIOD, .) (NEWLINE, 
+) 
+(CAPITAL, When) (CAPITAL, Union) (CAPITAL, Company) (INITIAL, I.) (NUMBER, 7) (CAPITAL, Regiment) (CAPITAL, West) (CAPITAL, Virginia) (CAPITAL, Volunteer) (CAPITAL, Infantry) (AND, and) (AND, and) (NUMBER, 1) (CAPITAL, Sergeant) (PERIOD, .) (CAPITAL, Bull) (CAPITAL, Run) (AND, and) (CAPITAL, Chancellorsville) (PERIOD, .) (NEWLINE, 
+) 
+(TITLE, Mr.) (CAPITAL, Yokum) (AND, and) (AND, and) (AND, and) (AND, and) (PERIOD, .) (NEWLINE, 
+) 
+(CAPITAL, By) (PERIOD, .) (NEWLINE, 
+) 

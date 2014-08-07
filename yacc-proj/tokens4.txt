@@ -1,0 +1,22 @@
+(MONTH, May) (NUMBER, 16) (YEAR, 2007) (CAPITAL, Grant) (CAPITAL, County) (PAPER, Press) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Eston) (CAPITAL, Theodore) (CAPITAL, "Buck") (CAPITAL, Kimble) (SUFFIX, Jr.) (NUMBER, 75) (CAPITAL, Kearneysville) (CAPITAL, Petersburg) (DIED, died) (WEEKDAY, Friday) (MONTH, May) (NUMBER, 11) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(BORN, Born) (MONTH, May) (NUMBER, 29) (YEAR, 1931) (CAPITAL, Petersburg) (SONOF, son of) (CAPITAL, Eston) (INITIAL, T.) (SUFFIX, Sr.) (AND, and) (CAPITAL, Dora) (LPAREN, () (CAPITAL, Cox) (RPAREN, )) (CAPITAL, Kimble) (PERIOD, .) (CAPITAL, Kenneth) (INITIAL, P.) (CAPITAL, Kimble) (PERIOD, ;) (CAPITAL, Emily) (CAPITAL, Florence) (CAPITAL, Kimble) (PERIOD, ;) (PERIOD, ;) (AND, and) (CAPITAL, Dovie) (CAPITAL, Bowers) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, He) (WIFE, wife) (NUMBER, 52) (CAPITAL, Suenette) (LPAREN, () (CAPITAL, Judy) (RPAREN, )) (CAPITAL, Kimble) (PERIOD, ;) (CAPITAL, Edwin) (INITIAL, B.) (CAPITAL, Kimble) (CAPITAL, Baltimore) (PERIOD, ;) (CAPITAL, Mary) (CAPITAL, Kimble) (CAPITAL, Kearneysville) (PERIOD, ;) (AND, and) (CAPITAL, Michele) (CAPITAL, Kolodziejski) (CAPITAL, Dana) (CAPITAL, Kimble) (CAPITAL, Ronnie) (CAPITAL, Dubner) (AND, and) (CAPITAL, Dylan) (CAPITAL, Dubner) (PERIOD, ;) (PERIOD, -) (AND, and) (CAPITAL, Joseph) (CAPITAL, Jacob) (CAPITAL, Kelsey) (AND, and) (CAPITAL, Billy) (PERIOD, ;) (CAPITAL, John) (INITIAL, H.) (CAPITAL, Kimble) (CAPITAL, Severna) (CAPITAL, Park) (CAPITAL, Md) (PERIOD, .) (CAPITAL, James) (INITIAL, R.) (CAPITAL, Kimble) (CAPITAL, Bel) (CAPITAL, Air) (CAPITAL, Md) (PERIOD, .) (AND, and) (CAPITAL, Randall) (INITIAL, A.) (CAPITAL, Kimble) (CAPITAL, Landes) (PERIOD, ;) (CAPITAL, Jean) (CAPITAL, Nelson) (CAPITAL, Martinsburg) (CAPITAL, Joan) (CAPITAL, Borror) (CAPITAL, Landes) (CAPITAL, Barbara) (CAPITAL, Bloom) (CAPITAL, Akron) (CAPITAL, Ohio) (AND, and) (CAPITAL, Sylvia) (CAPITAL, Ours) (CAPITAL, Martinsburg) (PERIOD, ;) (AND, and) (AND, and) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Funeral) (WEEKDAY, Monday) (CAPITAL, Schaeffer) (CAPITAL, Funeral) (CAPITAL, Home) (CAPITAL, Petersburg) (CAPITAL, Rev) (PERIOD, .) (CAPITAL, Gary) (CAPITAL, Phillips) (PERIOD, .) (CAPITAL, Interment) (CAPITAL, Judy) (CAPITAL, Cemetery) (CAPITAL, Landes) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Military) (CAPITAL, VFW) (CAPITAL, Post) (NUMBER, 6454) (AND, and) (CAPITAL, JROTC) (CAPITAL, Petersburg) (PERIOD, .) (LPAREN, () (NUMBER, 5) (PERIOD, -) (NUMBER, 15) (RPAREN, )) (NEWLINE, 
+) 

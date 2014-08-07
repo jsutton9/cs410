@@ -1,0 +1,22 @@
+(CAPITAL, Henry) (CAPITAL, Wirz) (CAPITAL, Cox) (NUMBER, 70) (CAPITAL, Cabins) (DIED, died) (MONTH, August) (NUMBER, 14) (CAPITAL, Winchester) (CAPITAL, Medical) (CAPITAL, Center) (CAPITAL, Winchester) (STATE, Va.) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(BORN, Born) (MONTH, December) (NUMBER, 5) (YEAR, 1932) (CAPITAL, Pennsylvania) (SONOF, son of) (CAPITAL, Townsend) (AND, and) (CAPITAL, Alice) (LPAREN, () (CAPITAL, Wirz) (RPAREN, )) (CAPITAL, Cox) (PERIOD, .) (WIFE, wife) (CAPITAL, Jean) (LPAREN, () (CAPITAL, Blakiston) (RPAREN, )) (CAPITAL, Cox) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, He) (CAPITAL, Susan) (CAPITAL, Heppard) (CAPITAL, Bushnell) (CAPITAL, Fla) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Services) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Arrangements) (CAPITAL, Omps) (CAPITAL, Funeral) (CAPITAL, Home) (CAPITAL, Amherst) (CAPITAL, Winchester) (STATE, Va.) (LPAREN, () (NUMBER, 8) (NUMBER, 19) (RPAREN, )) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Grant) (CAPITAL, County) (PAPER, Press) (NEWLINE, 
+) 

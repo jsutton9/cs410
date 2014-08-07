@@ -1,0 +1,8 @@
+(CAPITAL, Grant) (CAPITAL, County) (PAPER, Press) (MONTH, March) (NUMBER, 20) (YEAR, 1903) (NEWLINE, 
+) 
+(CAPITAL, Again) (AND, and) (PERIOD, .) (CAPITAL, Another) (PERIOD, .) (CAPITAL, On) (NUMBER, 12) (PERIOD, .) (CAPITAL, Death) (CAPITAL, Angel) (CAPITAL, Geo) (PERIOD, .) (CAPITAL, Yokum) (AND, and) (CAPITAL, Grandma) (PERIOD, -) (PERIOD, .) (AND, and) (AND, and) (AND, and) (PERIOD, -) (AND, and) (PERIOD, .) (CAPITAL, One) (CAPITAL, Civil) (CAPITAL, War) (AND, and) (AND, and) (AND, and) (HUSBAND, husband) (PERIOD, .) (CAPITAL, Since) (HUSBAND, husband) (CAPITAL, Geo) (PERIOD, .) (CAPITAL, Yokum) (SUFFIX, Jr.) (AND, and) (CAPITAL, Blessed) (CAPITAL, Word) (PERIOD, ;) (AND, and) (PERIOD, .) (NEWLINE, 
+) 
+(CAPITAL, Years) (HUSBAND, husband) (CAPITAL, Methodist) (CAPITAL, Episcopal) (AND, and) (PERIOD, ;) (AND, and) (PERIOD, .) (CAPITAL, Her) (HUSBAND, husband) (CAPITAL, Eternal) (CAPITAL, Realms) (AND, and) (AND, and) (CAPITAL, Golden) (CAPITAL, Shore) (PERIOD, .) (AND, and) (PERIOD, .) (AND, and) (AND, and) (AND, and) (PERIOD, .) (CAPITAL, Oh) (AND, and) (AND, and) (PERIOD, .) (CAPITAL, Crime) (AND, and) (AND, and) (AND, and) (PERIOD, .) (NEWLINE, 
+) 
+(CAPITAL, On) (NUMBER, 13) (MONTH, March) (AND, and) (BORN, born) (CAPITAL, Mouse) (AND, and) (AND, and) (PERIOD, -) (PERIOD, .) (CAPITAL, A) (CAPITAL, Grandma) (PERIOD, .) (AND, and) (AND, and) (PERIOD, .) (NEWLINE, 
+) 

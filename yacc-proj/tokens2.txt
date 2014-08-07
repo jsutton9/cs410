@@ -1,0 +1,30 @@
+(CAPITAL, Title) (PERIOD, :) (CAPITAL, Cumberland) (PAPER, Times) (PERIOD, -) (CAPITAL, News) (NEWLINE, 
+) 
+(CAPITAL, Page) (PERIOD, :) (MONTH, December) (NUMBER, 5) (YEAR, 1998) (NEWLINE, 
+) 
+(CAPITAL, Text) (PERIOD, :) (CAPITAL, LAHMANSVILLE) (STATE, W.Va.) (PERIOD, -) (CAPITAL, Iva) (CAPITAL, Catherine) (LPAREN, () (CAPITAL, Borror) (RPAREN, )) (CAPITAL, Porter) (NUMBER, 84) (CAPITAL, Lahmansville) (DIED, died) (WEEKDAY, Friday) (MONTH, December) (NUMBER, 4) (YEAR, 1998) (CAPITAL, Memorial) (CAPITAL, Hospital) (CAPITAL, Cumberland) (CAPITAL, Md) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(BORN, Born) (MONTH, September) (NUMBER, 23) (YEAR, 1914) (CAPITAL, Petersburg) (DAUGHTEROF, daughter of) (CAPITAL, Arthur) (INITIAL, E.) (AND, and) (CAPITAL, Stella) (LPAREN, () (CAPITAL, Cox) (RPAREN, )) (CAPITAL, Borror) (PERIOD, .) (HUSBAND, husband) (CAPITAL, Charles) (CAPITAL, William) (CAPITAL, Porter) (MONTH, July) (NUMBER, 5) (YEAR, 1978) (PERIOD, ;) (CAPITAL, Nannie) (CAPITAL, Borror) (CAPITAL, Westfall) (PERIOD, ;) (CAPITAL, Betty) (CAPITAL, Catherine) (CAPITAL, Porter) (PERIOD, ;) (PERIOD, -) (PERIOD, -) (AND, and) (CAPITAL, Patrick) (INITIAL, G.) (CAPITAL, Kindrick) (PERIOD, ;) (AND, and) (CAPITAL, Rennie) (CAPITAL, Borror) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(TITLE, Mrs.) (CAPITAL, Porter) (CAPITAL, Lahmansville) (CAPITAL, United) (CAPITAL, Methodist) (CAPITAL, Church) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Surviving) (AND, and) (PERIOD, -) (PERIOD, -) (CAPITAL, Margarite) (INITIAL, P.) (AND, and) (CAPITAL, Donald) (INITIAL, L.) (CAPITAL, Kindrick) (CAPITAL, Lahmansville) (PERIOD, ;) (PERIOD, -) (AND, and) (PERIOD, ;) (PERIOD, -) (PERIOD, -) (AND, and) (PERIOD, ;) (AND, and) (PERIOD, -) (PERIOD, -) (PERIOD, -) (AND, and) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Friends) (CAPITAL, Schaeffer) (CAPITAL, Funeral) (CAPITAL, Home) (CAPITAL, Petersburg) (WEEKDAY, Sunday) (NUMBER, 7) (NUMBER, 9) (PERIOD, .) (PERIOD, .) (AND, and) (WEEKDAY, Monday) (NUMBER, 2) (NUMBER, 4) (AND, and) (NUMBER, 7) (NUMBER, 9) (PERIOD, .) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Services) (CAPITAL, Lahmansville) (CAPITAL, United) (CAPITAL, Methodist) (CAPITAL, Church) (WEEKDAY, Tuesday) (NUMBER, 1) (PERIOD, .) (PERIOD, .) (CAPITAL, Rev) (PERIOD, .) (CAPITAL, French) (CAPITAL, Smith) (PERIOD, .) (NEWLINE, 
+) 
+(NEWLINE, 
+) 
+(CAPITAL, Interment) (CAPITAL, Lahmansville) (CAPITAL, Cemetery) (PERIOD, .) (NEWLINE, 
+) 
